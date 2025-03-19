@@ -1,0 +1,1001 @@
+transaction_id,customer_id,product_name,quantity,unit_price,total_price,purchase_date,store_location,payment_method,is_returned
+1,1,Cookie Choc,71,145.24,4440.17,3/25/2021,1st Floor,cash,false
+2,2,Cookies - Fortune,71,760.86,4557.46,8/25/2021,Suite 59,debit card,false
+3,3,Soup Campbells Beef With Veg,95,808.5,9849.12,7/5/2021,15th Floor,credit card,true
+4,4,Turkey Tenderloin Frozen,40,12.41,8337.13,11/21/2021,Room 952,cash,false
+5,5,"Yogurt - Banana, 175 Gr",28,344.53,7144.49,1/24/2021,Suite 7,credit card,true
+6,6,"Flour - Corn, Fine",92,684.64,3526.47,6/18/2021,PO Box 607,cash,false
+7,7,Jam - Raspberry,30,842.0,9074.31,1/5/2021,Room 33,cash,false
+8,8,Broom - Corn,30,173.95,6329.88,5/18/2021,19th Floor,cash,false
+9,9,Munchies Honey Sweet Trail Mix,93,233.34,1393.87,10/15/2021,Apt 656,credit card,true
+10,10,Cheese - Cheddar With Claret,74,835.08,4802.54,12/20/2021,Apt 1704,cash,false
+11,11,Flour - Whole Wheat,30,872.19,2491.4,1/29/2021,Suite 82,credit card,false
+12,12,Veal - Bones,86,695.04,3427.58,2/23/2021,Suite 70,cash,true
+13,13,Rolled Oats,59,469.99,456.81,9/29/2021,Suite 73,credit card,true
+14,14,Soho Lychee Liqueur,13,369.13,6395.64,5/23/2021,Apt 409,cash,true
+15,15,Filo Dough,63,402.97,6601.96,4/20/2021,PO Box 30895,credit card,true
+16,16,Muffin - Mix - Bran And Maple 15l,65,550.73,1936.95,9/19/2021,15th Floor,credit card,false
+17,17,Soup - Campbellschix Stew,60,620.22,2841.85,3/26/2021,11th Floor,cash,false
+18,18,Compound - Raspberry,46,955.78,6830.28,11/3/2021,PO Box 60956,cash,true
+19,19,Potatoes - Mini Red,43,992.22,3083.88,7/23/2021,9th Floor,cash,true
+20,20,Coffee - Cafe Moreno,31,800.67,9051.57,7/13/2021,14th Floor,debit card,true
+21,21,Butter Ripple - Phillips,71,638.86,5315.83,5/8/2021,Apt 1714,cash,false
+22,22,Beer - True North Strong Ale,34,491.65,8472.07,11/16/2021,Room 765,credit card,true
+23,23,Sobe - Liz Blizz,52,957.6,5593.81,5/28/2021,3rd Floor,credit card,false
+24,24,"Soup - Canadian Pea, Dry Mix",16,797.62,9802.72,2/14/2021,Apt 1670,debit card,true
+25,25,Cocoa Butter,90,834.34,2941.56,3/17/2021,PO Box 3929,debit card,true
+26,26,Anisette - Mcguiness,8,272.27,5117.59,2/1/2021,Suite 100,debit card,true
+27,27,Sterno - Chafing Dish Fuel,88,270.9,5323.13,11/18/2021,PO Box 1775,credit card,false
+28,28,Irish Cream - Baileys,10,146.8,831.9,1/5/2021,Apt 1811,cash,false
+29,29,"Beef - Rib Roast, Capless",79,265.5,4790.1,2/27/2021,Room 175,cash,false
+30,30,"Corn - Cream, Canned",79,573.67,2522.92,1/25/2021,Suite 97,credit card,false
+31,31,Bamboo Shoots - Sliced,54,421.99,1646.16,5/31/2021,Suite 67,credit card,true
+32,32,Shrimp - Tiger 21/25,11,853.4,9892.86,5/12/2021,Suite 93,cash,true
+33,33,Veal - Leg,28,376.77,8770.52,9/29/2021,Suite 46,debit card,false
+34,34,Beef - Texas Style Burger,70,746.71,5608.56,4/10/2021,Suite 5,debit card,false
+35,35,Pepper - Sorrano,33,176.02,1687.65,9/3/2021,Apt 548,debit card,false
+36,36,Chivas Regal - 12 Year Old,38,800.22,7026.08,9/20/2021,Suite 39,cash,false
+37,37,Venison - Ground,15,36.47,6522.5,6/5/2021,Room 1784,debit card,true
+38,38,Wine - Spumante Bambino White,4,338.61,6402.38,5/18/2021,4th Floor,credit card,true
+39,39,Pear - Packum,48,166.95,7502.18,2/23/2021,Room 958,cash,true
+40,40,"Tuna - Canned, Flaked, Light",87,880.04,3033.68,1/28/2021,Apt 79,cash,true
+41,41,Ice Cream Bar - Rolo Cone,97,689.33,2866.84,2/14/2021,Room 1891,debit card,false
+42,42,"Pasta - Shells, Medium, Dry",51,70.34,1756.8,1/30/2021,Room 1196,debit card,true
+43,43,Cheese - Mix,49,426.28,2221.55,12/23/2021,Suite 79,cash,false
+44,44,Salmon - Canned,22,96.02,568.51,11/1/2021,PO Box 60408,credit card,false
+45,45,Oven Mitts 17 Inch,33,616.48,6576.04,6/23/2021,Apt 1503,debit card,false
+46,46,Wine - Lamancha Do Crianza,84,746.39,2072.47,11/15/2021,Apt 807,debit card,true
+47,47,Sausage - Meat,68,719.0,4378.28,6/1/2021,PO Box 96075,debit card,true
+48,48,"Lemonade - Island Tea, 591 Ml",54,727.26,4692.61,1/2/2021,PO Box 42742,debit card,false
+49,49,Flavouring - Orange,25,248.33,6211.94,3/6/2021,PO Box 79823,credit card,true
+50,50,"Pasta - Tortellini, Fresh",10,482.42,4070.65,11/30/2021,Room 1355,debit card,true
+51,51,Jolt Cola - Electric Blue,55,968.73,6760.56,5/24/2021,8th Floor,cash,true
+52,52,Cheese - Bakers Cream Cheese,23,913.79,2522.1,3/5/2021,Suite 48,cash,true
+53,53,"Stock - Beef, Brown",37,246.03,2324.53,7/19/2021,Apt 1885,debit card,false
+54,54,"Mushroom - Oyster, Fresh",71,783.85,6371.29,4/8/2021,Apt 979,credit card,true
+55,55,Bread Ww Cluster,88,595.34,4930.7,1/23/2021,Suite 5,cash,true
+56,56,Cake Sheet Combo Party Pack,70,330.38,7485.41,5/21/2021,Suite 66,credit card,true
+57,57,"Beef - Chuck, Boneless",16,565.94,9876.6,6/29/2021,Suite 24,credit card,false
+58,58,Mangostein,1,468.7,951.93,9/28/2021,19th Floor,debit card,false
+59,59,Beef - Flank Steak,56,934.46,6590.77,10/12/2021,Suite 67,debit card,true
+60,60,Appetizer - Seafood Assortment,5,446.39,9828.38,4/9/2021,Suite 44,cash,false
+61,61,Sour Puss Sour Apple,76,435.51,4636.69,2/9/2021,PO Box 89416,credit card,true
+62,62,Piping - Bags Quizna,37,867.31,8698.4,8/25/2021,Room 61,debit card,false
+63,63,Cut Wakame - Hanawakaba,31,354.29,6020.39,2/14/2021,Apt 1692,debit card,true
+64,64,"Seedlings - Buckwheat, Organic",15,969.79,737.83,5/12/2021,PO Box 95385,cash,true
+65,65,Chicken - White Meat With Tender,31,813.89,4784.24,2/1/2021,PO Box 25958,cash,true
+66,66,Pate - Cognac,22,738.59,4495.03,3/15/2021,7th Floor,cash,false
+67,67,Cheese - Taleggio D.o.p.,23,867.25,3850.61,2/3/2021,PO Box 74506,debit card,false
+68,68,"Soup - Knorr, Country Bean",47,221.34,5524.31,2/5/2021,Suite 71,cash,true
+69,69,Water Chestnut - Canned,61,478.74,6543.62,5/29/2021,Room 774,cash,false
+70,70,Gelatine Leaves - Envelopes,35,991.53,3013.84,9/18/2021,Suite 10,debit card,true
+71,71,"Pepper - Julienne, Frozen",11,624.54,1972.26,1/7/2021,PO Box 27165,credit card,true
+72,72,Grapes - Green,81,790.59,2701.39,10/1/2021,8th Floor,debit card,false
+73,73,Whmis Spray Bottle Graduated,92,516.54,6136.35,10/4/2021,18th Floor,credit card,true
+74,74,Bread - Corn Muffaleta Onion,64,792.45,4287.93,7/12/2021,Suite 85,credit card,false
+75,75,Sour Puss Sour Apple,25,302.63,8569.8,8/31/2021,Suite 50,debit card,false
+76,76,Ice Cream Bar - Oreo Sandwich,74,394.15,5464.22,10/11/2021,Apt 1475,credit card,true
+77,77,Orange Roughy 6/8 Oz,30,851.58,7345.7,4/29/2021,PO Box 77054,credit card,true
+78,78,Potatoes - Parissienne,85,302.82,7821.41,7/17/2021,Suite 49,debit card,true
+79,79,Soup V8 Roasted Red Pepper,43,954.34,4082.36,4/11/2021,Apt 1573,cash,false
+80,80,Black Currants,30,803.66,4645.65,9/20/2021,PO Box 25319,credit card,false
+81,81,Beer - Blue Light,71,999.8,672.04,11/25/2021,Apt 86,debit card,false
+82,82,"Soup - Campbells, Spinach Crm",96,297.19,8111.15,3/28/2021,Suite 29,debit card,false
+83,83,Thermometer Digital,89,69.54,4676.59,7/19/2021,Suite 26,debit card,false
+84,84,"Halibut - Whole, Fresh",15,166.2,4558.62,11/30/2021,PO Box 4554,cash,false
+85,85,"Lemonade - Strawberry, 591 Ml",74,744.81,3459.04,11/14/2021,Room 1322,cash,true
+86,86,"Pepper - White, Whole",32,434.13,2024.98,11/11/2021,Room 665,debit card,true
+87,87,"Tarragon - Primerba, Paste",32,368.82,6035.37,3/6/2021,Apt 1190,credit card,false
+88,88,"Pasta - Bauletti, Chicken White",70,702.31,1653.26,12/1/2021,Room 1282,cash,true
+89,89,"Juice - Clamato, 341 Ml",19,665.19,4947.65,11/30/2021,Suite 85,credit card,true
+90,90,Pepper - Green Thai,67,836.0,6698.7,5/6/2021,Apt 153,credit card,true
+91,91,Sauce - Ranch Dressing,45,466.69,8338.46,5/13/2021,19th Floor,credit card,false
+92,92,"Veal - Leg, Provimi - 50 Lb Max",66,91.46,5508.95,5/9/2021,10th Floor,cash,true
+93,93,"Soup - Knorr, Ministrone",46,102.33,5697.06,3/20/2021,18th Floor,debit card,true
+94,94,Beef - Tenderloin,99,254.93,563.19,1/12/2021,Apt 1258,credit card,false
+95,95,Juice - Lagoon Mango,84,668.06,3477.66,1/2/2021,Room 671,credit card,true
+96,96,Chicken - Leg / Back Attach,7,493.13,8223.85,3/12/2021,Apt 6,debit card,true
+97,97,Shrimp - 31/40,55,722.02,3546.75,1/14/2021,PO Box 96953,debit card,false
+98,98,Hagen Daza - Dk Choocolate,68,667.38,1261.6,6/25/2021,5th Floor,cash,false
+99,99,Pepper - Orange,71,456.68,3375.56,5/11/2021,Apt 1048,debit card,true
+100,100,Lamb Rack - Ontario,97,370.42,9409.93,1/18/2021,11th Floor,debit card,false
+101,101,Mushroom - Chanterelle Frozen,22,78.46,122.23,7/15/2021,PO Box 95827,credit card,true
+102,102,Liquid Aminios Acid - Braggs,100,831.83,9667.7,1/15/2021,Suite 49,credit card,true
+103,103,Sausage - Chorizo,18,499.5,1118.79,4/26/2021,PO Box 83375,cash,true
+104,104,Red Pepper Paste,73,154.44,373.37,4/21/2021,PO Box 43467,credit card,true
+105,105,"Gingerale - Schweppes, 355 Ml",14,585.85,7852.4,7/5/2021,Suite 15,credit card,true
+106,106,Plasticspoonblack,94,975.3,3436.97,5/31/2021,5th Floor,cash,true
+107,107,Bagelers,23,210.19,213.94,3/5/2021,Room 1759,cash,true
+108,108,Garlic - Elephant,80,106.76,7589.6,7/31/2021,PO Box 78176,debit card,false
+109,109,Petite Baguette,83,822.78,5475.98,7/12/2021,Apt 1209,credit card,false
+110,110,"Jam - Blackberry, 20 Ml Jar",63,742.42,9138.9,7/2/2021,Apt 659,cash,false
+111,111,Chervil - Fresh,17,291.14,8556.92,5/1/2021,Suite 71,cash,true
+112,112,Cheese Cloth No 100,49,73.11,2311.49,9/18/2021,Apt 352,credit card,true
+113,113,Steampan - Half Size Shallow,89,318.78,3252.01,5/2/2021,Room 1250,credit card,false
+114,114,Ice Cream - Vanilla,49,944.64,2731.0,12/1/2021,Room 19,debit card,false
+115,115,Cheese Cloth No 100,30,874.04,122.14,6/19/2021,3rd Floor,credit card,true
+116,116,"Beef - Tongue, Fresh",67,738.77,4287.51,2/22/2021,16th Floor,debit card,true
+117,117,Bread Bowl Plain,33,415.96,3010.18,12/10/2021,Suite 77,debit card,true
+118,118,"Asparagus - Green, Fresh",9,145.23,3165.78,5/7/2021,5th Floor,credit card,false
+119,119,Olive - Spread Tapenade,11,74.61,4125.66,10/28/2021,PO Box 92401,debit card,true
+120,120,"Star Anise, Whole",73,223.24,7114.5,7/23/2021,6th Floor,credit card,true
+121,121,Spice - Peppercorn Melange,42,433.7,5488.79,6/2/2021,Apt 1481,cash,false
+122,122,Cheese - Mozzarella,31,658.93,1785.05,3/29/2021,6th Floor,credit card,true
+123,123,Bread - Calabrese Baguette,24,178.5,7848.87,4/16/2021,2nd Floor,credit card,true
+124,124,Bacardi Raspberry,81,932.45,7430.15,8/18/2021,Suite 31,debit card,false
+125,125,Rice - Long Grain,9,645.99,7654.63,5/29/2021,19th Floor,credit card,false
+126,126,Sproutsmustard Cress,49,257.0,8300.09,8/5/2021,Room 971,credit card,true
+127,127,Onion Powder,56,855.77,8486.38,7/31/2021,Suite 67,debit card,false
+128,128,Bamboo Shoots - Sliced,13,380.64,8056.1,6/14/2021,Room 400,cash,false
+129,129,Sugar - White Packet,94,479.01,5483.01,5/7/2021,Apt 1305,debit card,false
+130,130,Cheese - Brick With Pepper,74,736.29,3174.21,4/4/2021,Apt 1364,credit card,false
+131,131,Wine - Riesling Alsace Ac 2001,53,305.02,103.62,9/7/2021,Apt 1364,cash,true
+132,132,Spice - Peppercorn Melange,69,323.98,7253.32,12/17/2021,PO Box 5623,cash,true
+133,133,Quail Eggs - Canned,13,278.66,2645.13,6/6/2021,6th Floor,credit card,false
+134,134,Juice - Ocean Spray Kiwi,91,728.65,2946.47,3/23/2021,Room 1039,debit card,true
+135,135,Shichimi Togarashi Peppeers,69,506.45,1286.58,8/15/2021,PO Box 79512,debit card,true
+136,136,Hersey Shakes,95,967.92,5800.88,3/17/2021,Suite 93,credit card,false
+137,137,Wine - Puligny Montrachet A.,52,873.5,9053.49,12/26/2021,Apt 797,cash,true
+138,138,"Lamb - Leg, Boneless",85,915.64,6194.16,9/17/2021,Room 1280,debit card,false
+139,139,"Beans - Black Bean, Dry",1,854.37,6455.44,5/23/2021,Apt 584,credit card,false
+140,140,"Beef - Cooked, Corned",62,399.8,550.44,4/18/2021,Room 1659,debit card,false
+141,141,"Sauce - Soya, Light",34,864.87,1710.49,1/27/2021,PO Box 62216,cash,true
+142,142,"Soup - Campbells, Minestrone",50,734.3,3410.99,10/11/2021,Room 1408,debit card,false
+143,143,Tomatillo,42,122.03,567.77,8/28/2021,20th Floor,debit card,false
+144,144,Syrup - Chocolate,24,948.76,3296.6,7/12/2021,Apt 359,debit card,true
+145,145,"Tart Shells - Sweet, 2",74,574.95,4639.91,12/6/2021,7th Floor,credit card,true
+146,146,"Bar Mix - Pina Colada, 355 Ml",13,651.55,7638.12,7/6/2021,Suite 63,cash,true
+147,147,Bacon Strip Precooked,75,551.84,4471.67,4/24/2021,PO Box 80485,credit card,true
+148,148,Sesame Seed Black,57,873.68,4976.44,5/16/2021,Suite 53,credit card,true
+149,149,Mousse - Mango,38,783.72,4536.89,1/8/2021,Room 2000,credit card,false
+150,150,Cheese - Brick With Onion,54,968.03,8697.85,5/13/2021,Apt 1132,credit card,false
+151,151,Grapefruit - White,77,530.4,3064.78,6/17/2021,Apt 464,debit card,true
+152,152,"Bread - Roll, Canadian Dinner",18,103.58,8183.23,11/28/2021,PO Box 91367,debit card,false
+153,153,"Pasta - Penne, Rigate, Dry",19,544.79,6541.31,7/17/2021,Apt 1931,credit card,true
+154,154,Bandage - Fexible 1x3,21,459.88,3510.74,11/19/2021,17th Floor,debit card,true
+155,155,Kiwano,26,502.9,1180.98,9/19/2021,Room 1093,credit card,false
+156,156,Cheese - Blue,26,245.62,3978.28,5/13/2021,PO Box 56701,debit card,false
+157,157,Creamers - 10%,55,651.11,2945.76,6/17/2021,Suite 21,cash,false
+158,158,Gelatine Powder,54,649.82,9099.11,10/22/2021,1st Floor,debit card,true
+159,159,"Bread - Pumpernickle, Rounds",65,422.99,6029.65,4/3/2021,Apt 457,debit card,false
+160,160,Wine - Chianti Classica Docg,33,508.18,4417.16,11/3/2021,Room 1747,credit card,false
+161,161,Syrup - Monin - Passion Fruit,22,189.3,4911.08,4/11/2021,Room 10,credit card,false
+162,162,Chinese Foods - Chicken Wing,31,688.6,6958.01,10/14/2021,Room 661,debit card,true
+163,163,"Oranges - Navel, 72",85,575.03,8677.08,7/4/2021,PO Box 11471,cash,false
+164,164,Bread - Raisin,25,864.63,6239.37,5/17/2021,PO Box 6356,credit card,false
+165,165,Lettuce - Belgian Endive,39,533.21,1987.2,3/29/2021,Room 378,debit card,false
+166,166,Wine - Ruffino Chianti Classico,23,979.47,2223.91,3/6/2021,10th Floor,credit card,false
+167,167,"Lamb - Leg, Diced",6,823.04,9761.95,8/8/2021,Suite 90,credit card,false
+168,168,Milk - Homo,49,279.12,2789.88,5/4/2021,Apt 138,cash,true
+169,169,"Sauce - Bernaise, Mix",12,177.25,2208.22,4/22/2021,PO Box 31525,credit card,false
+170,170,Shrimp - 31/40,90,549.43,3449.42,2/27/2021,Room 360,cash,true
+171,171,Lettuce - Escarole,12,423.24,9733.05,4/29/2021,PO Box 46209,debit card,true
+172,172,Butter - Salted,86,228.29,4426.55,1/6/2021,Apt 1278,cash,false
+173,173,Wine - Zonnebloem Pinotage,99,946.09,8564.85,2/4/2021,Room 1891,cash,false
+174,174,Bread - Triangle White,98,859.32,3800.34,12/1/2021,20th Floor,credit card,false
+175,175,"Beef - Ground, Extra Lean, Fresh",82,696.85,2392.64,9/12/2021,PO Box 81407,credit card,true
+176,176,Sword Pick Asst,75,329.27,2215.77,7/16/2021,PO Box 2112,debit card,false
+177,177,Flour - Fast / Rapid,58,777.21,6732.74,12/20/2021,Room 1699,debit card,false
+178,178,"Wine - Magnotta - Red, Baco",25,119.76,3868.68,6/29/2021,Suite 53,debit card,true
+179,179,Ecolab - Mikroklene 4/4 L,36,759.01,3790.97,3/6/2021,Suite 29,cash,false
+180,180,Cookie Dough - Double,13,83.73,9372.36,8/5/2021,Room 1263,debit card,true
+181,181,Icecream - Dstk Super Cone,34,39.23,6446.74,2/10/2021,Apt 1106,cash,false
+182,182,Potatoes - Yukon Gold 5 Oz,11,286.8,1759.56,1/29/2021,Suite 71,debit card,false
+183,183,Huck White Towels,20,737.53,5822.41,12/26/2021,16th Floor,cash,false
+184,184,Higashimaru Usukuchi Soy,61,524.47,2042.46,4/23/2021,Room 364,credit card,true
+185,185,Pear - Asian,94,499.27,5211.06,11/4/2021,Room 721,debit card,true
+186,186,Mountain Dew,31,464.61,3508.07,12/21/2021,PO Box 20963,debit card,false
+187,187,Clam Nectar,94,863.35,1750.1,1/7/2021,11th Floor,credit card,false
+188,188,Lettuce - Curly Endive,19,871.68,6750.53,12/25/2021,PO Box 42566,cash,false
+189,189,"Beets - Candy Cane, Organic",60,643.33,7929.3,11/2/2021,Apt 1718,debit card,false
+190,190,Chinese Foods - Chicken Wing,93,651.95,3592.76,5/9/2021,Room 687,debit card,false
+191,191,Cake Slab,81,635.86,8400.38,5/22/2021,PO Box 924,debit card,false
+192,192,Canada Dry,82,767.18,1539.52,1/30/2021,Apt 1681,debit card,false
+193,193,Oil - Peanut,54,606.79,8807.68,11/6/2021,Apt 374,cash,true
+194,194,"Salmon - Atlantic, Fresh, Whole",36,544.28,8321.53,8/28/2021,Suite 90,credit card,false
+195,195,Bagelers - Cinn / Brown,33,774.26,6421.34,1/13/2021,Apt 1310,credit card,true
+196,196,French Pastry - Mini Chocolate,87,768.88,1783.43,6/21/2021,Apt 1943,debit card,false
+197,197,Tea - Black Currant,79,619.51,5961.25,4/27/2021,Suite 60,debit card,true
+198,198,Wine - Casillero Del Diablo,1,385.44,4414.4,7/27/2021,Room 1259,cash,true
+199,199,"Wine - White, Cooking",19,767.6,9741.22,1/10/2021,Room 1447,credit card,false
+200,200,Muffin Puck Ww Carrot,44,627.62,6246.6,7/15/2021,Room 1753,cash,false
+201,201,"Bread - Roll, Canadian Dinner",16,707.77,6635.11,1/13/2021,PO Box 47767,credit card,false
+202,202,Zucchini - Yellow,37,804.54,3793.14,11/21/2021,Room 162,debit card,true
+203,203,Wine - Two Oceans Sauvignon,12,907.94,8596.14,3/11/2021,Room 1991,credit card,false
+204,204,"Crab - Dungeness, Whole, live",12,459.78,3034.04,1/18/2021,Apt 1864,cash,false
+205,205,"Doilies - 8, Paper",72,742.61,410.38,3/27/2021,Room 1305,debit card,true
+206,206,Bread - Rosemary Focaccia,93,833.75,8343.69,1/16/2021,PO Box 48239,debit card,false
+207,207,Catfish - Fillets,53,870.85,3510.68,9/28/2021,PO Box 9456,debit card,false
+208,208,Wine - Conde De Valdemar,72,664.76,9744.79,10/21/2021,PO Box 55415,cash,true
+209,209,"Fish - Artic Char, Cold Smoked",51,854.17,2640.88,7/22/2021,Apt 1712,credit card,false
+210,210,Pork - Hock And Feet Attached,51,470.69,906.3,5/26/2021,Room 38,debit card,true
+211,211,Glaze - Apricot,38,405.8,7405.75,9/8/2021,Room 1946,debit card,true
+212,212,Cookie - Oatmeal,8,367.76,9553.79,1/27/2021,Room 41,cash,false
+213,213,"Soup - Knorr, Chicken Noodle",40,484.78,8327.98,2/13/2021,PO Box 71982,cash,false
+214,214,Cheese - La Sauvagine,87,51.94,2253.69,4/24/2021,Room 1993,debit card,false
+215,215,"Radish - Black, Winter, Organic",90,830.03,3247.07,5/9/2021,Apt 1105,credit card,true
+216,216,"Sugar - Sweet N Low, Individual",44,27.25,3514.22,9/22/2021,7th Floor,debit card,true
+217,217,"Iced Tea - Lemon, 460 Ml",15,242.42,7675.04,10/28/2021,Suite 82,credit card,false
+218,218,Eel Fresh,96,917.6,7143.25,10/25/2021,13th Floor,cash,false
+219,219,"Wine - Red, Wolf Blass, Yellow",20,683.38,2567.41,12/28/2021,7th Floor,credit card,true
+220,220,"Salt - Rock, Course",24,727.11,8722.43,2/20/2021,6th Floor,cash,false
+221,221,Pastrami,77,48.14,417.7,1/27/2021,8th Floor,credit card,false
+222,222,Coffee Guatemala Dark,31,328.74,6121.45,4/12/2021,Apt 1388,debit card,true
+223,223,Ice Cream - Turtles Stick Bar,73,865.9,75.88,7/12/2021,Apt 1449,debit card,false
+224,224,Wine - Alsace Gewurztraminer,62,942.54,4842.1,4/17/2021,Apt 1380,credit card,true
+225,225,Avocado,95,848.72,6574.95,10/27/2021,Apt 1879,cash,false
+226,226,The Pop Shoppe - Grape,58,37.38,8551.0,9/12/2021,Room 73,debit card,false
+227,227,Cheese - Ermite Bleu,83,48.46,8012.33,2/13/2021,Room 124,cash,true
+228,228,Cucumber - English,48,787.15,6800.48,6/11/2021,Room 1122,debit card,true
+229,229,"Chocolate - Semi Sweet, Calets",12,382.76,111.09,5/7/2021,Suite 68,cash,false
+230,230,Buffalo - Tenderloin,21,868.22,5411.45,8/28/2021,Suite 98,credit card,false
+231,231,Bagel - Plain,79,883.01,1134.0,1/11/2021,PO Box 13315,credit card,false
+232,232,Pasta - Cheese / Spinach Bauletti,100,949.18,7799.89,9/28/2021,Suite 90,cash,true
+233,233,Cookie Dough - Double,42,909.35,1533.29,4/25/2021,Room 1209,cash,false
+234,234,Sausage - Chorizo,54,757.74,7001.42,8/15/2021,11th Floor,credit card,false
+235,235,Ecolab Silver Fusion,41,739.16,4544.56,7/17/2021,Room 1784,cash,true
+236,236,Mustard - Dijon,36,169.14,3447.82,9/18/2021,PO Box 88998,debit card,true
+237,237,Munchies Honey Sweet Trail Mix,66,477.14,6376.82,9/19/2021,Suite 30,cash,false
+238,238,Lettuce - Boston Bib - Organic,98,23.51,3017.86,7/9/2021,Room 343,debit card,false
+239,239,"Salmon - Atlantic, Skin On",86,144.4,1706.15,2/18/2021,2nd Floor,credit card,true
+240,240,Bacardi Breezer - Strawberry,55,604.7,8862.32,2/16/2021,Suite 99,debit card,false
+241,241,Wine - Vovray Sec Domaine Huet,90,195.94,2205.23,9/3/2021,PO Box 8898,debit card,true
+242,242,"Chicken - Base, Ultimate",21,438.18,2737.86,1/24/2021,Apt 1954,credit card,false
+243,243,Mangoes,25,102.57,432.35,5/23/2021,Room 335,debit card,false
+244,244,Bandage - Finger Cots,83,783.33,1633.18,11/25/2021,Apt 288,cash,true
+245,245,Beer - Mill St Organic,79,813.09,7455.46,8/15/2021,PO Box 56806,debit card,false
+246,246,Bread - Dark Rye,70,849.65,4944.87,7/4/2021,Apt 1150,credit card,true
+247,247,Muffin Carrot - Individual,11,742.83,2991.59,8/3/2021,Room 398,debit card,true
+248,248,"Artichoke - Hearts, Canned",74,376.36,8582.89,3/11/2021,Suite 2,cash,true
+249,249,"Bread - Pullman, Sliced",4,698.09,5143.7,8/25/2021,Room 320,credit card,true
+250,250,Apple - Granny Smith,91,577.01,549.77,1/29/2021,14th Floor,debit card,false
+251,251,Bread Roll Foccacia,76,772.57,5558.22,4/4/2021,17th Floor,credit card,false
+252,252,"Sparkling Wine - Rose, Freixenet",89,156.96,6648.06,12/7/2021,PO Box 75749,cash,true
+253,253,Venison - Liver,75,430.04,2354.13,1/25/2021,Suite 64,credit card,false
+254,254,Cookie Dough - Double,32,452.43,5101.97,10/13/2021,Suite 64,debit card,true
+255,255,Carbonated Water - Orange,86,16.79,3647.58,5/17/2021,Apt 804,cash,true
+256,256,Potatoes - Idaho 100 Count,29,701.71,6412.78,11/15/2021,Apt 731,credit card,true
+257,257,Dc Hikiage Hira Huba,97,384.99,9482.24,4/23/2021,Apt 1006,credit card,true
+258,258,Bread - Hot Dog Buns,9,697.57,1312.82,2/28/2021,Apt 807,cash,true
+259,259,Wine - Rioja Campo Viejo,40,544.38,7255.5,1/24/2021,PO Box 54892,credit card,false
+260,260,Parasol Pick Stir Stick,37,50.43,4160.83,2/20/2021,PO Box 57620,credit card,false
+261,261,Pastry - Mini French Pastries,27,702.76,5900.84,11/17/2021,17th Floor,debit card,false
+262,262,Carbonated Water - Blackberry,47,335.49,9963.13,4/25/2021,Suite 47,credit card,false
+263,263,Vinegar - Red Wine,67,915.52,2938.72,1/5/2021,16th Floor,credit card,true
+264,264,Pork - Back Ribs,32,488.02,4185.55,12/4/2021,Apt 609,debit card,true
+265,265,Clams - Bay,47,106.73,4566.41,9/11/2021,Room 1212,debit card,true
+266,266,"Orange - Canned, Mandarin",84,549.43,468.72,9/21/2021,PO Box 25761,debit card,true
+267,267,Cornstarch,15,647.05,7546.55,12/12/2021,16th Floor,cash,false
+268,268,"Doilies - 10, Paper",83,738.42,2664.25,10/11/2021,Apt 500,debit card,false
+269,269,Muffin - Blueberry Individual,80,366.49,673.79,11/16/2021,Room 1252,credit card,false
+270,270,Ginger - Pickled,59,615.37,2287.84,11/27/2021,PO Box 84933,credit card,false
+271,271,Appetizer - Smoked Salmon / Dill,82,899.07,6213.17,3/21/2021,PO Box 34956,cash,false
+272,272,Browning Caramel Glace,14,971.83,2335.79,4/18/2021,Apt 1754,credit card,true
+273,273,Apricots - Halves,52,155.05,7854.75,3/18/2021,PO Box 94590,cash,false
+274,274,Dc - Frozen Momji,21,209.52,6085.47,5/6/2021,Room 1609,cash,false
+275,275,"Wine - Red, Black Opal Shiraz",74,757.83,4110.79,11/24/2021,Apt 1658,cash,false
+276,276,"Carrots - Purple, Organic",7,811.69,7407.63,5/19/2021,Room 1202,cash,true
+277,277,Lettuce - Iceberg,95,138.83,8844.21,9/4/2021,Room 1054,debit card,false
+278,278,Cocoa Feuilletine,49,367.8,3710.47,12/20/2021,Suite 50,debit card,true
+279,279,Clam Nectar,70,802.56,2041.51,8/18/2021,Room 756,debit card,false
+280,280,V8 - Tropical Blend,35,231.22,7063.53,5/30/2021,PO Box 471,credit card,false
+281,281,Vinegar - Tarragon,69,860.36,3349.49,1/9/2021,Room 1308,credit card,false
+282,282,Mcgillicuddy Vanilla Schnap,32,40.36,5491.66,12/24/2021,Room 902,debit card,true
+283,283,Chef Hat 20cm,34,755.81,5060.36,2/15/2021,Room 1847,cash,true
+284,284,Soup Campbells Beef With Veg,40,512.76,5321.73,7/1/2021,Room 125,credit card,false
+285,285,Sword Pick Asst,3,803.63,9181.71,8/10/2021,Suite 24,credit card,false
+286,286,"Mushroom - Trumpet, Dry",15,140.73,6989.88,7/5/2021,Apt 502,credit card,true
+287,287,Bread - Pita,89,41.48,4963.06,11/28/2021,PO Box 56094,credit card,true
+288,288,Bag - Clear 7 Lb,54,795.21,6664.63,7/17/2021,Suite 62,cash,true
+289,289,Sprouts - Bean,17,150.57,1832.59,1/25/2021,Apt 446,credit card,true
+290,290,"Mushroom - Enoki, Dry",13,317.28,6535.76,1/27/2021,PO Box 24478,cash,true
+291,291,Chicken Breast Wing On,93,939.44,7858.93,2/20/2021,PO Box 83357,credit card,true
+292,292,Truffle Cups Green,18,302.5,3419.88,1/16/2021,8th Floor,cash,false
+293,293,Wine - Acient Coast Caberne,32,449.3,4377.96,8/31/2021,PO Box 84464,debit card,true
+294,294,Veal - Sweetbread,80,928.96,9760.14,2/7/2021,Room 49,cash,false
+295,295,"Bread - White, Unsliced",22,515.37,1477.5,5/13/2021,Apt 41,credit card,false
+296,296,Puree - Mango,3,82.25,6876.19,3/25/2021,Room 95,credit card,false
+297,297,Beans - Green,44,107.37,5308.96,10/14/2021,PO Box 26109,cash,true
+298,298,Bread - Burger,27,594.06,6509.15,10/12/2021,PO Box 34226,cash,false
+299,299,Energy Drink,87,966.02,4710.55,11/12/2021,PO Box 17806,cash,false
+300,300,Herb Du Provence - Primerba,52,719.66,9895.51,2/9/2021,Suite 16,debit card,false
+301,301,Mix - Cocktail Ice Cream,68,717.54,8091.75,2/23/2021,Apt 87,credit card,false
+302,302,Oneshot Automatic Soap System,81,988.37,1748.86,6/21/2021,Suite 74,credit card,false
+303,303,Scallops - Live In Shell,70,718.56,9606.67,12/8/2021,Suite 36,debit card,true
+304,304,Chevril,73,543.1,3079.79,8/31/2021,Apt 616,credit card,false
+305,305,White Baguette,97,846.98,5209.95,10/23/2021,2nd Floor,debit card,false
+306,306,Carroway Seed,52,29.86,9532.58,4/25/2021,PO Box 14451,debit card,true
+307,307,Sauerkraut,51,397.8,6126.77,5/17/2021,Suite 29,debit card,false
+308,308,"Vermouth - White, Cinzano",65,321.93,4676.86,5/9/2021,Room 1605,credit card,true
+309,309,Mcguinness - Blue Curacao,68,108.94,7357.96,10/3/2021,Suite 72,credit card,false
+310,310,Strawberries,76,564.14,1029.63,3/9/2021,6th Floor,credit card,false
+311,311,Flour - Bread,60,175.81,4355.4,5/2/2021,9th Floor,credit card,true
+312,312,Snapple - Iced Tea Peach,50,330.33,2374.48,3/31/2021,9th Floor,cash,false
+313,313,"Pepper - Paprika, Hungarian",91,543.91,6309.31,12/1/2021,Room 594,cash,true
+314,314,Rabbit - Whole,5,831.0,1020.12,11/25/2021,Apt 1604,credit card,false
+315,315,Pepper - Red Chili,7,82.79,5213.68,10/29/2021,PO Box 76701,cash,false
+316,316,Plasticknivesblack,91,454.56,9876.89,5/17/2021,Apt 694,cash,true
+317,317,"Tuna - Canned, Flaked, Light",38,149.04,3929.57,3/9/2021,Apt 1160,debit card,true
+318,318,"Pasta - Cappellini, Dry",7,925.17,879.18,6/7/2021,4th Floor,credit card,true
+319,319,"Trout - Rainbow, Frozen",3,443.76,1.36,7/25/2021,Room 1954,credit card,true
+320,320,Garlic,9,619.96,1636.64,3/22/2021,Apt 1232,credit card,true
+321,321,Muffin Mix - Raisin Bran,50,398.67,8213.86,12/1/2021,Apt 1346,credit card,false
+322,322,Butter Balls Salted,95,596.94,1321.48,5/10/2021,Room 345,credit card,true
+323,323,Pork - Hock And Feet Attached,99,503.14,4252.01,2/5/2021,Room 1920,cash,true
+324,324,Island Oasis - Wildberry,3,238.16,8375.71,9/20/2021,Room 1918,cash,false
+325,325,Soup - Campbells Chicken,49,600.49,834.94,10/15/2021,Suite 90,cash,true
+326,326,"Cheese - Brie, Cups 125g",99,263.6,7617.47,12/20/2021,9th Floor,debit card,true
+327,327,Daves Island Stinger,84,736.06,3396.2,4/4/2021,Suite 5,cash,true
+328,328,Lotus Rootlets - Canned,100,927.78,4009.53,8/27/2021,Suite 34,cash,false
+329,329,Straws - Cocktale,98,989.18,2683.67,6/12/2021,Suite 18,debit card,false
+330,330,Triple Sec - Mcguinness,88,922.78,3671.64,2/2/2021,Suite 39,cash,true
+331,331,Steampan Lid,44,531.7,485.51,5/10/2021,Suite 56,debit card,false
+332,332,Chocolate - White,91,592.97,4679.31,8/9/2021,Apt 839,debit card,false
+333,333,"Juice - Cranberry, 341 Ml",57,399.92,3921.73,9/10/2021,16th Floor,cash,true
+334,334,Uniform Linen Charge,81,986.31,2094.9,10/25/2021,Apt 1181,credit card,false
+335,335,Ecolab - Hand Soap Form Antibac,5,713.07,389.51,4/8/2021,Room 64,debit card,true
+336,336,Sea Bass - Fillets,31,846.84,4250.99,8/30/2021,Suite 99,debit card,false
+337,337,Burger Veggie,61,385.01,7968.72,2/18/2021,PO Box 31183,cash,false
+338,338,Gloves - Goldtouch Disposable,6,960.94,7650.33,3/29/2021,Apt 195,debit card,false
+339,339,Wine - Zinfandel California 2002,65,531.12,2394.0,3/6/2021,PO Box 22689,credit card,false
+340,340,Water - Perrier,10,519.57,1999.27,12/16/2021,PO Box 13166,debit card,false
+341,341,Flower - Potmums,60,63.43,5589.89,7/11/2021,PO Box 47707,cash,false
+342,342,"Wine - Red, Metus Rose",30,58.93,7103.35,12/28/2021,Room 13,credit card,false
+343,343,"Shrimp - 16/20, Iqf, Shell On",88,155.54,7333.71,5/15/2021,Suite 12,credit card,true
+344,344,Onion Powder,43,807.47,7163.19,6/22/2021,Suite 16,debit card,true
+345,345,"Bread - White, Unsliced",100,712.47,1940.83,2/17/2021,Suite 85,credit card,false
+346,346,Pie Filling - Apple,87,445.95,7936.32,6/11/2021,Apt 1645,cash,true
+347,347,Bar Nature Valley,14,716.68,4923.3,7/23/2021,Apt 1858,credit card,true
+348,348,Wine - Magnotta - Bel Paese White,70,995.99,5833.57,7/17/2021,PO Box 88236,credit card,false
+349,349,Asparagus - Frozen,47,807.77,3539.74,1/13/2021,Suite 79,credit card,false
+350,350,Soup - Tomato Mush. Florentine,27,409.53,88.46,1/22/2021,Room 1781,debit card,true
+351,351,"Soup - Knorr, French Onion",52,949.8,9919.08,12/1/2021,Room 187,cash,true
+352,352,"Wine - White, Mosel Gold",59,944.31,3574.63,11/15/2021,Room 335,debit card,true
+353,353,"Soup - Campbells, Cream Of",2,878.55,9546.3,9/12/2021,Suite 16,credit card,true
+354,354,Jolt Cola,5,180.79,7632.69,12/8/2021,PO Box 14979,cash,false
+355,355,"Wine - Red, Antinori Santa",45,385.58,5833.48,9/10/2021,PO Box 75809,cash,true
+356,356,Beef - Diced,27,50.8,1858.74,12/21/2021,Apt 859,credit card,true
+357,357,Bread Foccacia Whole,33,448.02,7416.77,2/19/2021,PO Box 67652,debit card,false
+358,358,"Pepsi - Diet, 355 Ml",57,16.83,5805.33,10/12/2021,9th Floor,debit card,false
+359,359,Cheese Cloth No 60,30,270.35,5772.68,8/13/2021,Suite 40,cash,true
+360,360,Scampi Tail,99,114.16,149.27,11/7/2021,PO Box 50608,cash,false
+361,361,Cardamon Ground,76,203.02,4705.09,11/26/2021,13th Floor,cash,true
+362,362,Pork - Back Ribs,20,172.96,4033.69,11/18/2021,Room 1157,cash,true
+363,363,Truffle Cups Green,28,417.2,3245.14,7/5/2021,PO Box 90099,debit card,true
+364,364,"Soup - Knorr, Chicken Gumbo",43,265.84,377.95,12/29/2021,3rd Floor,credit card,false
+365,365,"Juice - Apple, 500 Ml",11,153.36,6902.24,1/27/2021,PO Box 68190,credit card,false
+366,366,Crab - Meat,50,161.52,4443.23,5/10/2021,7th Floor,debit card,false
+367,367,Sprouts - Onion,96,812.98,6603.89,1/29/2021,Room 867,debit card,true
+368,368,"Beets - Candy Cane, Organic",34,236.62,3638.51,3/3/2021,Suite 13,cash,true
+369,369,"Placemat - Scallop, White",82,729.16,1757.91,6/25/2021,Suite 27,credit card,true
+370,370,Beef - Striploin Aa,13,751.81,3122.83,2/15/2021,6th Floor,credit card,false
+371,371,Cookie Double Choco,7,211.22,8483.48,3/7/2021,PO Box 24622,credit card,true
+372,372,"Pork - Butt, Boneless",94,308.7,2710.66,8/8/2021,Suite 13,debit card,true
+373,373,"Nut - Almond, Blanched, Ground",10,134.92,5624.81,9/2/2021,Apt 1471,credit card,true
+374,374,Salt And Pepper Mix - Black,49,955.61,6042.75,7/25/2021,4th Floor,debit card,true
+375,375,Lettuce - Iceberg,31,401.1,7117.79,5/30/2021,Suite 17,debit card,false
+376,376,Chip - Potato Dill Pickle,10,58.27,288.07,7/25/2021,Suite 35,cash,true
+377,377,Pasta - Canelloni,64,291.04,2288.04,4/17/2021,PO Box 1182,debit card,true
+378,378,Pike - Frozen Fillet,23,723.67,7570.39,4/16/2021,Room 594,credit card,true
+379,379,"Rum - Dark, Bacardi, Black",98,799.74,6024.12,4/1/2021,Room 447,cash,false
+380,380,Ginger - Ground,45,341.11,2746.79,2/13/2021,Room 1680,credit card,false
+381,381,"Beef - Roasted, Cooked",28,178.14,2002.03,8/28/2021,Room 1744,debit card,false
+382,382,Lamb - Bones,87,132.21,9160.89,9/2/2021,Apt 831,credit card,true
+383,383,"Soup - Clam Chowder, Dry Mix",8,826.73,4542.48,5/14/2021,Suite 4,cash,false
+384,384,Island Oasis - Mango Daiquiri,2,337.13,8068.41,1/28/2021,20th Floor,credit card,false
+385,385,Juice - Propel Sport,74,397.71,922.7,10/16/2021,Room 67,credit card,false
+386,386,Sauerkraut,24,835.66,9268.94,11/30/2021,PO Box 1177,debit card,true
+387,387,Marjoram - Fresh,32,770.43,7377.3,7/3/2021,19th Floor,credit card,true
+388,388,"Soup - Campbells, Chix Gumbo",41,679.42,3589.12,5/5/2021,Suite 64,cash,false
+389,389,Mace,96,853.86,4628.64,10/9/2021,PO Box 49059,cash,true
+390,390,Bagels Poppyseed,39,590.71,4637.1,9/3/2021,Suite 46,debit card,true
+391,391,Ocean Spray - Ruby Red,99,3.71,2803.29,8/8/2021,Room 1144,credit card,false
+392,392,"Nut - Almond, Blanched, Whole",33,730.61,6225.7,10/17/2021,6th Floor,credit card,false
+393,393,Syrup - Kahlua Chocolate,6,878.94,7149.39,10/10/2021,2nd Floor,cash,true
+394,394,"Seedlings - Buckwheat, Organic",82,91.81,9291.07,10/25/2021,Suite 32,cash,false
+395,395,Bar Mix - Lemon,94,828.73,3620.89,2/27/2021,Suite 48,debit card,false
+396,396,Apricots Fresh,16,277.01,3313.81,2/26/2021,1st Floor,cash,false
+397,397,Guava,12,878.04,8388.5,9/18/2021,Room 1421,credit card,false
+398,398,Muffin Mix - Carrot,37,296.15,8193.07,9/23/2021,Room 134,credit card,false
+399,399,Lamb - Loin Chops,90,500.22,6931.74,9/14/2021,8th Floor,credit card,false
+400,400,"Soup - Knorr, French Onion",60,839.71,6732.05,12/22/2021,12th Floor,cash,false
+401,401,"Soup - Knorr, French Onion",90,326.82,2210.96,6/15/2021,Apt 1654,credit card,true
+402,402,Ginger - Crystalized,92,833.23,9311.31,4/25/2021,Apt 1404,cash,true
+403,403,Ecolab - Lime - A - Way 4/4 L,59,706.98,2128.62,11/6/2021,Room 1055,cash,true
+404,404,Curry Powder Madras,1,509.71,9642.32,9/23/2021,10th Floor,credit card,true
+405,405,Ostrich - Prime Cut,55,256.04,8008.87,1/23/2021,Suite 5,cash,false
+406,406,Oneshot Automatic Soap System,20,197.37,3926.29,1/11/2021,PO Box 18183,credit card,false
+407,407,"Wine - Red, Harrow Estates, Cab",37,416.34,2232.79,2/12/2021,PO Box 88113,debit card,true
+408,408,Chips Potato Salt Vinegar 43g,37,517.12,8930.09,4/8/2021,Room 1443,credit card,true
+409,409,Milk - Chocolate 250 Ml,17,503.05,5577.76,7/20/2021,Suite 20,cash,true
+410,410,Celery Root,46,894.92,9608.97,8/9/2021,Room 1772,credit card,true
+411,411,Plate Foam Laminated 9in Blk,41,817.35,1997.35,10/23/2021,5th Floor,credit card,true
+412,412,"Fish - Scallops, Cold Smoked",41,345.87,8614.16,8/21/2021,Apt 1376,credit card,false
+413,413,"Pork - Tenderloin, Fresh",6,332.34,3189.45,9/16/2021,Suite 66,cash,false
+414,414,Mustard - Pommery,25,79.16,1902.24,7/13/2021,10th Floor,debit card,true
+415,415,Urban Zen Drinks,29,996.9,8029.25,9/10/2021,PO Box 26488,cash,true
+416,416,True - Vue Containers,98,104.12,6171.72,4/29/2021,Suite 73,cash,true
+417,417,Artichokes - Jerusalem,89,476.39,2389.85,5/6/2021,PO Box 77909,cash,true
+418,418,Mint - Fresh,72,286.71,5227.91,10/9/2021,8th Floor,credit card,true
+419,419,Nantucket Pine Orangebanana,100,205.72,2378.69,11/18/2021,Room 1904,credit card,true
+420,420,Garlic Powder,85,28.96,8692.76,1/3/2021,17th Floor,debit card,false
+421,421,Curry Paste - Green Masala,79,422.76,2849.37,9/19/2021,Room 1391,credit card,false
+422,422,Truffle Paste,84,303.25,8208.1,4/25/2021,Suite 24,cash,false
+423,423,Jello - Assorted,37,806.26,4962.13,5/5/2021,PO Box 38019,debit card,true
+424,424,Grand Marnier,21,593.62,4696.4,1/10/2021,Suite 92,credit card,true
+425,425,"Yogurt - Banana, 175 Gr",59,631.58,4865.5,8/17/2021,4th Floor,cash,true
+426,426,Muffin - Blueberry Individual,3,884.05,8184.81,2/2/2021,Room 475,cash,false
+427,427,Chocolate - Mi - Amere Semi,45,847.73,6124.63,4/21/2021,Suite 61,debit card,true
+428,428,Cake - Night And Day Choclate,65,579.94,7236.03,1/11/2021,Apt 676,cash,false
+429,429,Wine - Delicato Merlot,78,372.73,2974.18,12/9/2021,Suite 69,credit card,false
+430,430,Wine - Champagne Brut Veuve,57,798.44,5796.19,1/4/2021,Suite 88,credit card,true
+431,431,Wine - Gato Negro Cabernet,53,966.43,2178.31,5/21/2021,Room 762,credit card,true
+432,432,"Soup - Knorr, Classic Can. Chili",85,207.81,1941.83,5/15/2021,PO Box 32227,debit card,false
+433,433,Cornish Hen,2,844.26,6500.21,11/10/2021,Room 1698,cash,false
+434,434,Oil - Olive Bertolli,62,986.95,3209.17,6/22/2021,15th Floor,credit card,false
+435,435,Island Oasis - Mango Daiquiri,89,540.33,5986.44,6/23/2021,Apt 480,credit card,true
+436,436,Meldea Green Tea Liquor,100,132.65,5932.91,6/7/2021,8th Floor,cash,true
+437,437,Skirt - 24 Foot,25,308.5,1898.14,11/24/2021,Room 245,debit card,true
+438,438,Coffee - 10oz Cup 92961,27,496.84,8146.46,5/22/2021,Room 1876,debit card,true
+439,439,Muffin - Blueberry Individual,37,509.29,1428.85,7/5/2021,Suite 59,credit card,true
+440,440,Vegetable - Base,97,497.72,7738.15,6/23/2021,Suite 66,credit card,false
+441,441,Nantuket Peach Orange,26,227.97,6336.72,5/11/2021,18th Floor,credit card,true
+442,442,Chocolate - Milk Coating,34,538.93,9181.19,3/24/2021,Room 1276,debit card,true
+443,443,Turkey - Oven Roast Breast,3,641.71,6633.32,6/6/2021,Suite 9,credit card,false
+444,444,"Nut - Almond, Blanched, Ground",74,68.38,7091.72,8/2/2021,PO Box 42891,cash,false
+445,445,Cheese - Brie,17,954.08,1272.6,11/13/2021,Apt 1535,debit card,false
+446,446,Tarts Assorted,18,181.52,6230.93,6/26/2021,Room 1680,credit card,true
+447,447,Squid - Breaded,40,995.27,8992.82,4/3/2021,Suite 24,debit card,false
+448,448,"Basil - Primerba, Paste",35,52.78,8315.76,12/21/2021,Room 1175,debit card,false
+449,449,"Tart Shells - Savory, 2",94,189.37,1852.16,8/11/2021,PO Box 94665,cash,false
+450,450,Tea - Lemon Green Tea,95,294.94,9257.17,12/20/2021,Suite 96,credit card,false
+451,451,Pepper - Red Thai,23,219.18,1242.96,1/26/2021,6th Floor,cash,false
+452,452,Spring Roll Wrappers,12,757.94,9695.86,11/5/2021,10th Floor,credit card,false
+453,453,Wine - Valpolicella Masi,69,424.01,6732.74,2/15/2021,17th Floor,credit card,true
+454,454,Lime Cordial - Roses,21,352.83,9412.03,8/16/2021,Room 1468,debit card,false
+455,455,"Pasta - Lasagna, Dry",99,147.27,6479.29,4/21/2021,PO Box 38723,cash,false
+456,456,Beer - Labatt Blue,22,881.01,4732.39,6/18/2021,Apt 723,cash,true
+457,457,Sachet,24,770.69,9036.57,12/23/2021,Room 717,cash,false
+458,458,Salami - Genova,83,55.05,1466.58,10/25/2021,Room 1338,cash,false
+459,459,"Lamb - Leg, Diced",12,996.11,8792.96,12/17/2021,PO Box 89705,cash,true
+460,460,Shark - Loin,33,774.7,4999.84,2/11/2021,PO Box 87588,debit card,true
+461,461,"Soup - Knorr, Ministrone",66,212.91,3635.08,12/24/2021,Room 323,debit card,false
+462,462,Wine - Beringer Founders Estate,8,849.73,2129.31,6/12/2021,Suite 58,debit card,true
+463,463,"Wine - White, Riesling, Henry Of",49,268.91,5880.19,5/4/2021,Room 174,credit card,false
+464,464,"Halibut - Whole, Fresh",8,708.81,557.39,1/19/2021,Apt 305,credit card,false
+465,465,Dried Cherries,28,894.24,6487.28,12/10/2021,Room 1489,debit card,true
+466,466,Fondant - Icing,26,357.75,6148.7,1/13/2021,Room 1992,credit card,false
+467,467,Wine - Vidal Icewine Magnotta,76,722.02,3618.24,6/19/2021,Suite 76,cash,false
+468,468,Haggis,21,102.15,1668.87,3/20/2021,Suite 36,cash,false
+469,469,Turkey Tenderloin Frozen,7,437.42,6337.21,11/16/2021,Room 470,credit card,true
+470,470,"Cup - 3.5oz, Foam",30,763.34,3327.38,8/2/2021,Apt 84,cash,true
+471,471,Chevril,86,769.45,8130.99,7/28/2021,Suite 10,cash,false
+472,472,Tomato - Plum With Basil,64,48.34,6724.86,7/21/2021,Apt 85,debit card,false
+473,473,Truffle Shells - White Chocolate,87,478.59,9617.19,4/15/2021,18th Floor,cash,false
+474,474,Lettuce - Arugula,70,915.2,7346.0,9/14/2021,Apt 1793,credit card,true
+475,475,"Wine - Red, Antinori Santa",56,101.1,3632.17,6/14/2021,2nd Floor,debit card,true
+476,476,Nantucket Cranberry Juice,68,675.25,8563.04,2/27/2021,Suite 59,credit card,false
+477,477,"Cheese - Cheddar, Mild",32,862.65,87.57,7/14/2021,Room 257,debit card,true
+478,478,Spring Roll Wrappers,67,640.21,7616.07,11/9/2021,PO Box 54308,credit card,true
+479,479,Ginger - Crystalized,50,167.48,8886.6,4/28/2021,Room 1888,credit card,true
+480,480,Lentils - Green Le Puy,8,266.14,8448.84,2/10/2021,12th Floor,credit card,false
+481,481,Macaroons - Homestyle Two Bit,88,216.45,8159.38,3/18/2021,Room 383,debit card,true
+482,482,Vodka - Moskovskaya,66,164.28,2921.48,3/28/2021,Room 863,cash,true
+483,483,Lamb - Rack,48,39.53,4117.97,1/6/2021,2nd Floor,credit card,true
+484,484,Wine - Magnotta - Cab Franc,82,638.97,297.05,3/7/2021,Room 1177,credit card,false
+485,485,Wine - Shiraz Wolf Blass Premium,57,39.77,368.62,6/4/2021,5th Floor,debit card,false
+486,486,Canada Dry,64,588.55,8407.59,4/29/2021,Suite 96,credit card,false
+487,487,Lettuce - Lambs Mash,20,22.66,9250.68,2/5/2021,PO Box 20634,credit card,true
+488,488,"Beef - Outside, Round",100,762.39,4165.77,2/13/2021,PO Box 93886,debit card,true
+489,489,"Soup - Campbells, Creamy",99,12.84,2783.32,12/11/2021,Room 1359,debit card,true
+490,490,Tomatoes - Heirloom,63,376.04,9386.85,7/23/2021,Room 767,debit card,false
+491,491,"Stock - Veal, Brown",25,139.38,5818.64,9/3/2021,PO Box 42019,credit card,false
+492,492,Flour - Whole Wheat,19,615.66,3907.1,2/27/2021,PO Box 35351,cash,true
+493,493,Lettuce - Baby Salad Greens,30,847.31,1570.96,9/1/2021,18th Floor,cash,true
+494,494,"Gin - Gilbeys London, Dry",15,827.89,2538.08,2/15/2021,Suite 100,credit card,true
+495,495,Grapefruit - White,51,25.01,9463.06,5/3/2021,Apt 495,debit card,true
+496,496,Rabbit - Frozen,57,981.3,6952.77,4/12/2021,10th Floor,credit card,false
+497,497,Chicken - Leg / Back Attach,85,320.92,3683.47,3/25/2021,7th Floor,debit card,true
+498,498,Orange - Tangerine,28,64.42,182.51,4/24/2021,Room 1387,cash,true
+499,499,"Pasta - Penne Primavera, Single",1,899.28,6726.4,6/6/2021,PO Box 76467,cash,false
+500,500,Wine - Gewurztraminer Pierre,83,801.14,2746.41,6/15/2021,Suite 91,cash,true
+501,501,"Radish - Black, Winter, Organic",81,509.15,6921.51,5/7/2021,8th Floor,cash,true
+502,502,Cardamon Ground,38,538.93,4540.54,2/23/2021,PO Box 28804,debit card,false
+503,503,Sobe - Orange Carrot,60,77.0,4312.17,10/2/2021,Suite 42,credit card,true
+504,504,Bagel - Everything Presliced,27,186.47,3887.5,5/9/2021,PO Box 63916,credit card,true
+505,505,"Sauce - Black Current, Dry Mix",13,184.95,572.05,2/19/2021,Apt 1198,cash,true
+506,506,Yogurt - Plain,20,363.39,3578.2,5/7/2021,Apt 1046,debit card,true
+507,507,"Pepper - Black, Ground",31,979.8,316.61,6/3/2021,4th Floor,debit card,true
+508,508,Cheese - Brie Roitelet,79,169.66,4927.67,11/25/2021,Apt 980,credit card,false
+509,509,"Yogurt - Peach, 175 Gr",78,170.5,4049.86,8/29/2021,Room 1416,debit card,true
+510,510,Pear - Asian,59,728.08,8914.23,8/3/2021,Apt 1369,credit card,true
+511,511,Snapple Raspberry Tea,57,934.54,413.73,6/23/2021,Suite 32,cash,false
+512,512,"Bread - Pumpernickle, Rounds",86,871.51,8637.47,5/11/2021,Suite 73,credit card,false
+513,513,Isomalt,2,903.09,2508.18,10/31/2021,4th Floor,debit card,true
+514,514,Pastry - Key Limepoppy Seed Tea,83,326.78,459.22,9/7/2021,Suite 32,credit card,false
+515,515,Bread - Olive,18,908.07,1461.93,1/21/2021,Room 1781,cash,true
+516,516,"Lid - 10,12,16 Oz",64,610.02,5964.91,3/15/2021,Room 449,credit card,true
+517,517,Vinegar - Tarragon,78,522.57,8447.91,5/30/2021,Room 1990,cash,false
+518,518,Mustard - Individual Pkg,50,752.3,5921.77,1/28/2021,PO Box 44080,cash,false
+519,519,Chick Peas - Dried,90,650.05,2740.36,1/26/2021,Room 1662,cash,false
+520,520,Wine - Alicanca Vinho Verde,2,231.07,363.14,6/3/2021,Apt 1205,debit card,false
+521,521,Eggroll,75,71.23,123.24,12/11/2021,Suite 60,debit card,false
+522,522,Pepper - Gypsy Pepper,16,379.11,9190.34,7/11/2021,14th Floor,cash,false
+523,523,Apple - Fuji,61,497.28,9443.79,9/5/2021,Suite 65,cash,true
+524,524,"Cheese - Havarti, Salsa",76,25.07,1221.94,4/10/2021,Suite 30,debit card,true
+525,525,Crawfish,32,469.75,6160.76,10/17/2021,Apt 1827,debit card,true
+526,526,Wine - Lou Black Shiraz,87,263.3,4348.32,8/2/2021,2nd Floor,credit card,true
+527,527,Pepper - Cubanelle,61,532.43,583.47,4/15/2021,PO Box 38887,debit card,false
+528,528,Lamb - Shoulder,54,54.31,1826.25,11/14/2021,6th Floor,credit card,false
+529,529,"Tomatoes - Cherry, Yellow",71,306.71,9144.63,7/30/2021,PO Box 93644,debit card,true
+530,530,Tea - Apple Green Tea,75,870.77,9367.32,9/29/2021,Room 1230,cash,true
+531,531,Pastry - Banana Muffin - Mini,77,590.47,1821.45,9/15/2021,Apt 1728,credit card,true
+532,532,Tamarillo,8,190.57,3199.6,5/6/2021,7th Floor,credit card,false
+533,533,Wine - Delicato Merlot,39,713.21,1852.05,5/31/2021,Room 1158,debit card,false
+534,534,Fiddlehead - Frozen,5,327.6,769.11,5/29/2021,16th Floor,debit card,true
+535,535,"Beans - Long, Chinese",59,750.43,9928.86,11/7/2021,Apt 1171,cash,false
+536,536,Pork - Side Ribs,61,656.32,5800.95,2/11/2021,Room 764,credit card,true
+537,537,Carrots - Jumbo,72,724.36,3162.7,5/6/2021,11th Floor,credit card,true
+538,538,Walkers Special Old Whiskey,38,504.3,42.58,2/20/2021,Apt 1654,cash,true
+539,539,V8 Splash Strawberry Banana,97,136.05,6686.6,2/27/2021,Room 1282,credit card,false
+540,540,Smoked Paprika,34,187.05,5188.36,12/7/2021,Apt 1937,credit card,true
+541,541,Beef - Tenderloin - Aa,94,679.91,8317.55,6/19/2021,Suite 43,debit card,false
+542,542,"Trout - Rainbow, Fresh",90,124.06,7693.85,5/12/2021,2nd Floor,cash,false
+543,543,"Beef - Baby, Liver",25,942.54,8782.09,10/15/2021,Suite 85,credit card,true
+544,544,Lamb Leg - Bone - In Nz,42,101.03,9723.99,5/29/2021,PO Box 59220,debit card,false
+545,545,Rice - Long Grain,20,749.43,9307.64,12/21/2021,Apt 547,cash,false
+546,546,Sauce - Marinara,98,862.11,4367.76,5/31/2021,Suite 52,credit card,false
+547,547,Juice - V8 Splash,51,775.59,3147.18,4/10/2021,Suite 34,credit card,false
+548,548,Beer - Pilsner Urquell,4,76.78,5209.7,5/27/2021,6th Floor,cash,false
+549,549,Pear - Asian,34,731.13,1943.07,8/3/2021,Room 891,credit card,false
+550,550,Seabream Whole Farmed,69,227.18,9439.01,6/1/2021,PO Box 30532,credit card,true
+551,551,Mikes Hard Lemonade,75,360.1,2613.84,6/12/2021,3rd Floor,cash,false
+552,552,Jam - Apricot,26,623.68,6115.44,8/5/2021,8th Floor,credit card,true
+553,553,Longos - Cheese Tortellini,61,722.22,5828.14,4/29/2021,PO Box 1520,debit card,true
+554,554,Cheese - Gorgonzola,29,722.35,8027.4,4/12/2021,Suite 41,debit card,true
+555,555,Oil - Avocado,95,412.52,5965.93,5/7/2021,Suite 77,debit card,true
+556,556,Urban Zen Drinks,92,713.51,8699.22,11/12/2021,PO Box 21731,credit card,false
+557,557,Cheese - Parmesan Grated,58,200.65,9090.16,7/14/2021,Room 897,credit card,true
+558,558,Kohlrabi,86,83.65,1593.87,8/26/2021,Suite 54,cash,false
+559,559,Coffee Decaf Colombian,33,426.89,1526.12,3/7/2021,Room 104,debit card,false
+560,560,"Pineapple - Canned, Rings",41,157.49,7386.59,3/22/2021,Room 340,debit card,false
+561,561,Salami - Genova,38,800.2,9810.82,5/25/2021,18th Floor,credit card,true
+562,562,"Mushroom - Morels, Dry",56,592.62,4740.38,2/2/2021,Suite 39,cash,true
+563,563,Oil - Sesame,59,355.13,7203.58,10/28/2021,Suite 88,credit card,true
+564,564,Pastry - Carrot Muffin - Mini,59,54.63,9956.65,5/17/2021,PO Box 96650,credit card,false
+565,565,"Beef - Ground, Extra Lean, Fresh",85,59.53,8921.64,4/25/2021,PO Box 2860,cash,true
+566,566,"Appetizer - Mini Egg Roll, Shrimp",51,334.44,1709.44,10/31/2021,Room 913,debit card,false
+567,567,Soup - French Can Pea,75,455.57,9967.61,12/4/2021,Room 604,credit card,true
+568,568,Wine - Kwv Chenin Blanc South,100,767.77,5006.23,4/15/2021,Suite 96,cash,false
+569,569,Onions - Cooking,22,958.79,8238.18,5/13/2021,Room 389,debit card,true
+570,570,Red Currants,87,952.41,3757.09,3/25/2021,Room 1536,cash,true
+571,571,Pastry - Cherry Danish - Mini,26,119.85,3248.25,9/2/2021,Room 666,credit card,false
+572,572,Table Cloth 62x114 White,41,713.73,4119.62,3/22/2021,6th Floor,debit card,false
+573,573,Oven Mitt - 13 Inch,89,87.42,9168.28,8/3/2021,Suite 75,cash,false
+574,574,Soup - Campbells Mac N Cheese,96,208.93,9728.88,5/3/2021,PO Box 94000,credit card,false
+575,575,Extract - Lemon,73,772.78,7487.33,8/27/2021,Apt 1912,credit card,false
+576,576,Tea - Herbal - 6 Asst,77,91.02,120.2,11/12/2021,Apt 864,credit card,false
+577,577,"Salmon - Atlantic, No Skin",23,489.58,9134.98,8/30/2021,Suite 3,debit card,true
+578,578,Icecream - Dstk Strw Chseck,89,35.64,955.51,7/28/2021,Suite 95,credit card,false
+579,579,"Club Soda - Schweppes, 355 Ml",1,674.92,5005.99,6/11/2021,Suite 86,cash,false
+580,580,Beer - Moosehead,96,545.29,7509.72,4/30/2021,PO Box 52977,cash,false
+581,581,Taro Root,86,281.3,2436.02,6/27/2021,Room 735,credit card,false
+582,582,Potatoes - Yukon Gold 5 Oz,21,555.18,8912.46,8/12/2021,Suite 94,debit card,false
+583,583,Bar Energy Chocchip,21,795.59,5265.07,8/26/2021,Apt 545,debit card,false
+584,584,"Juice - Clam, 46 Oz",54,963.76,9751.99,7/4/2021,Suite 68,cash,true
+585,585,Pimento - Canned,79,432.72,9961.46,9/6/2021,Suite 18,debit card,true
+586,586,French Kiss Vanilla,94,668.0,6630.58,2/6/2021,Suite 69,cash,false
+587,587,Red Currant Jelly,99,726.79,6093.11,11/7/2021,PO Box 66812,cash,false
+588,588,Butter Sweet,44,45.62,292.66,4/3/2021,Suite 31,debit card,true
+589,589,Squid Ink,69,359.89,4189.97,8/3/2021,Suite 32,cash,true
+590,590,Gherkin,57,384.45,6369.77,6/12/2021,19th Floor,credit card,true
+591,591,Gelatine Leaves - Bulk,73,877.87,2990.88,12/2/2021,Room 1166,credit card,false
+592,592,Bread - Kimel Stick Poly,20,618.25,6131.4,8/3/2021,19th Floor,credit card,false
+593,593,Glaze - Clear,84,128.33,2461.09,11/16/2021,6th Floor,credit card,true
+594,594,Ecolab Crystal Fusion,53,316.55,1141.34,12/2/2021,PO Box 42235,cash,true
+595,595,"Soup - Campbells, Spinach Crm",5,841.2,3543.67,12/20/2021,Room 730,debit card,true
+596,596,Rappini - Andy Boy,26,549.16,2380.58,3/4/2021,3rd Floor,debit card,true
+597,597,Nantucket Orange Juice,55,493.58,7150.46,3/21/2021,3rd Floor,cash,true
+598,598,Cup - 4oz Translucent,51,474.95,7528.34,4/5/2021,Apt 262,cash,true
+599,599,"Beans - Kidney, Red Dry",96,614.02,5663.07,8/16/2021,Suite 44,debit card,true
+600,600,Chocolate Bar - Oh Henry,62,734.88,7356.49,2/11/2021,6th Floor,debit card,false
+601,601,"Lentils - Green, Dry",68,214.2,7474.89,5/6/2021,Room 1202,credit card,true
+602,602,Turkey Tenderloin Frozen,100,519.92,3569.7,9/6/2021,Suite 6,cash,false
+603,603,Tomato Paste,2,621.53,1432.42,6/8/2021,Suite 45,cash,true
+604,604,Wine - Rhine Riesling Wolf Blass,54,926.22,6694.43,12/7/2021,PO Box 99737,debit card,false
+605,605,"Wine - Red, Black Opal Shiraz",5,217.69,7257.42,2/4/2021,Room 357,credit card,true
+606,606,Dragon Fruit,58,977.67,3034.11,6/13/2021,Apt 1282,debit card,true
+607,607,Dc Hikiage Hira Huba,97,34.25,7828.7,9/6/2021,Room 682,debit card,false
+608,608,"Quail - Whole, Bone - In",74,492.67,8454.45,10/8/2021,Suite 38,debit card,false
+609,609,Jameson - Irish Whiskey,52,643.13,6254.49,2/3/2021,PO Box 21284,cash,false
+610,610,Ham - Cooked Italian,31,143.87,6651.93,10/12/2021,Apt 133,debit card,false
+611,611,Eggplant - Baby,73,626.43,4594.57,3/21/2021,Apt 1392,cash,true
+612,612,Bacardi Raspberry,15,890.16,5731.96,8/15/2021,PO Box 31415,credit card,false
+613,613,"Artichokes - Knobless, White",68,312.1,3517.69,6/5/2021,Room 656,cash,true
+614,614,Wine - Stoneliegh Sauvignon,44,756.37,6739.34,6/14/2021,Suite 90,credit card,true
+615,615,Bread - Pumpernickel,98,400.65,2280.25,3/26/2021,PO Box 22633,debit card,true
+616,616,Cleaner - Pine Sol,93,827.31,6922.19,1/26/2021,Apt 1470,debit card,true
+617,617,Rabbit - Legs,63,304.75,6009.09,10/9/2021,Apt 49,debit card,true
+618,618,Olives - Nicoise,63,421.18,7244.41,12/16/2021,Room 1060,debit card,false
+619,619,Bowl 12 Oz - Showcase 92012,63,487.59,2923.32,3/20/2021,PO Box 63165,debit card,false
+620,620,Muffin Batt - Blueberry Passion,97,616.7,7147.29,7/10/2021,Apt 359,credit card,true
+621,621,"Oil - Truffle, White",100,425.23,9695.27,4/20/2021,Apt 1466,cash,true
+622,622,Kirsch - Schloss,45,684.74,6265.16,8/29/2021,PO Box 40895,cash,false
+623,623,Cake - Cheese Cake 9 Inch,55,237.99,9788.58,8/5/2021,Apt 1679,debit card,false
+624,624,Lettuce - Red Leaf,33,724.22,9149.41,2/2/2021,Apt 591,debit card,false
+625,625,Beans - Fava Fresh,21,108.08,2557.68,11/10/2021,PO Box 60196,credit card,false
+626,626,"Soup - Beef, Base Mix",35,20.15,4266.16,4/18/2021,Suite 100,cash,false
+627,627,Gatorade - Lemon Lime,66,914.21,2194.34,10/6/2021,14th Floor,cash,false
+628,628,Yeast Dry - Fermipan,93,431.29,7961.31,6/21/2021,Suite 61,cash,true
+629,629,"Lemonade - Island Tea, 591 Ml",62,259.52,1202.89,2/10/2021,Apt 1315,debit card,true
+630,630,Sugar - Invert,18,245.26,8228.25,1/8/2021,Suite 76,cash,false
+631,631,"Wine - White, Colubia Cresh",47,333.47,6149.17,4/13/2021,Apt 1974,debit card,true
+632,632,Muffin Batt - Carrot Spice,49,855.41,5776.25,10/19/2021,Room 1598,debit card,false
+633,633,Tahini Paste,20,402.91,8770.13,8/23/2021,15th Floor,cash,true
+634,634,Appetiser - Bought,30,50.2,3587.78,8/16/2021,19th Floor,credit card,false
+635,635,Tomatoes - Cherry,35,863.17,9858.54,1/5/2021,Apt 1088,debit card,false
+636,636,Salt And Pepper Mix - White,74,564.78,3857.5,3/7/2021,Suite 30,credit card,false
+637,637,"Cod - Salted, Boneless",53,809.41,4206.29,1/16/2021,Suite 97,debit card,true
+638,638,Oysters - Smoked,69,351.64,6258.97,1/30/2021,Room 632,credit card,false
+639,639,"Wine - Red, Colio Cabernet",52,203.7,8679.2,6/27/2021,Suite 10,cash,false
+640,640,Spice - Peppercorn Melange,3,163.88,6313.08,9/13/2021,2nd Floor,credit card,false
+641,641,Soup - Campbells Mac N Cheese,22,585.59,5914.7,1/28/2021,Suite 60,debit card,false
+642,642,Pork - Smoked Back Bacon,37,918.81,3491.46,3/31/2021,1st Floor,credit card,true
+643,643,Broom - Push,11,812.49,6367.82,10/8/2021,6th Floor,credit card,true
+644,644,Bread - Corn Muffaletta,19,613.54,3835.68,8/16/2021,PO Box 36692,credit card,false
+645,645,Lettuce Romaine Chopped,54,106.77,5869.71,11/12/2021,Room 1098,cash,true
+646,646,"Lemonade - Mandarin, 591 Ml",3,703.34,8799.08,9/18/2021,PO Box 47796,debit card,true
+647,647,"Napkin - Cocktail,beige 2 - Ply",24,418.21,6588.84,10/11/2021,Apt 914,cash,false
+648,648,Fudge - Cream Fudge,68,438.89,7985.92,9/12/2021,Room 1948,credit card,true
+649,649,"Mushroom - Oyster, Fresh",60,889.72,5054.87,11/14/2021,Apt 1461,cash,true
+650,650,"Beef - Chuck, Boneless",6,910.38,529.98,2/28/2021,Room 303,cash,true
+651,651,Longos - Chicken Curried,37,401.45,3352.4,8/11/2021,Suite 13,debit card,false
+652,652,Wine - Pinot Grigio Collavini,86,860.44,5143.49,4/30/2021,Apt 321,debit card,true
+653,653,Wine - Chateau Timberlay,81,992.08,2040.76,3/7/2021,1st Floor,cash,false
+654,654,Pastry - Cherry Danish - Mini,50,517.67,5390.76,10/25/2021,PO Box 53914,debit card,true
+655,655,Sprouts - Pea,4,379.12,6225.17,5/13/2021,Suite 15,cash,true
+656,656,"Octopus - Baby, Cleaned",85,70.39,3630.68,1/26/2021,Suite 26,cash,false
+657,657,Milk - 2%,2,346.41,9976.69,12/11/2021,Suite 84,credit card,false
+658,658,Foil - 4oz Custard Cup,75,815.81,4229.51,12/22/2021,Apt 445,cash,false
+659,659,Edible Flower - Mixed,69,814.28,9184.52,8/30/2021,Room 891,debit card,true
+660,660,Lotus Rootlets - Canned,49,660.29,1284.11,1/6/2021,11th Floor,cash,false
+661,661,Crab Meat Claw Pasteurise,88,99.74,5617.12,7/1/2021,2nd Floor,credit card,true
+662,662,"Rum - Cream, Amarula",7,276.15,3284.07,6/10/2021,Apt 56,credit card,false
+663,663,"Pasta - Cannelloni, Sheets, Fresh",34,958.41,8531.63,12/19/2021,6th Floor,debit card,true
+664,664,"Hickory Smoke, Liquid",19,347.87,1498.29,12/15/2021,6th Floor,cash,true
+665,665,Apricots - Halves,92,627.6,7466.53,12/26/2021,16th Floor,cash,true
+666,666,Oranges,45,929.73,6464.47,10/19/2021,PO Box 12501,credit card,false
+667,667,"Lemonade - Island Tea, 591 Ml",12,366.42,8155.55,1/17/2021,Apt 62,credit card,true
+668,668,Sour Puss Raspberry,40,792.3,2650.85,10/3/2021,Room 1148,debit card,true
+669,669,"Bar Mix - Pina Colada, 355 Ml",96,262.26,4014.94,6/11/2021,Room 1580,debit card,false
+670,670,Cinnamon Rolls,43,675.81,7257.92,2/4/2021,Apt 1398,debit card,false
+671,671,Apple - Northern Spy,76,877.88,7024.91,2/19/2021,Suite 61,credit card,true
+672,672,Breakfast Quesadillas,89,217.1,5358.41,3/27/2021,13th Floor,cash,true
+673,673,Bagel - Sesame Seed Presliced,89,715.51,2098.44,6/8/2021,5th Floor,cash,false
+674,674,Ice Cream - Super Sandwich,90,588.93,3612.05,7/30/2021,Room 701,cash,true
+675,675,"Pasta - Fettuccine, Dry",20,216.34,2828.52,10/25/2021,Room 1371,debit card,false
+676,676,Dill Weed - Fresh,70,209.15,7369.86,11/1/2021,Suite 91,debit card,true
+677,677,Pants Custom Dry Clean,68,15.03,9923.98,3/21/2021,Room 183,cash,false
+678,678,Rolled Oats,2,184.68,5841.35,4/5/2021,PO Box 23214,credit card,true
+679,679,"Bread - Pita, Mini",76,219.74,6485.36,6/10/2021,Room 781,credit card,false
+680,680,Cape Capensis - Fillet,86,296.91,4389.95,5/18/2021,18th Floor,credit card,false
+681,681,Persimmons,72,918.73,2581.01,12/18/2021,Room 704,cash,true
+682,682,Pizza Pizza Dough,58,440.67,3454.62,7/17/2021,Room 365,cash,true
+683,683,Beef Tenderloin Aaa,63,873.42,8320.19,7/30/2021,Apt 981,debit card,false
+684,684,Capon - Whole,32,827.29,642.08,4/15/2021,3rd Floor,cash,false
+685,685,Beer - Camerons Auburn,49,191.75,4395.25,11/16/2021,Suite 27,credit card,true
+686,686,Mushrooms - Honey,94,991.75,9886.73,9/12/2021,Room 1729,cash,false
+687,687,Cheese - Grie Des Champ,97,275.2,9529.53,2/3/2021,Apt 939,credit card,false
+688,688,Pea - Snow,100,51.11,2977.64,9/18/2021,PO Box 16128,credit card,true
+689,689,Bouillion - Fish,30,611.53,2601.64,6/8/2021,7th Floor,cash,true
+690,690,"Split Peas - Green, Dry",89,150.96,8212.8,4/24/2021,PO Box 16103,credit card,false
+691,691,Coffee - Egg Nog Capuccino,29,104.24,9245.32,1/30/2021,4th Floor,credit card,false
+692,692,General Purpose Trigger,95,571.36,3782.09,8/15/2021,Apt 1728,credit card,true
+693,693,Banana Turning,18,976.02,9973.82,8/3/2021,Room 1999,credit card,false
+694,694,"Salmon - Atlantic, Skin On",14,835.91,4437.04,5/27/2021,Room 1711,debit card,true
+695,695,Wine - Blue Nun Qualitatswein,4,865.73,2444.72,8/3/2021,Room 541,cash,false
+696,696,Flour - All Purpose,94,439.44,955.37,4/27/2021,Suite 29,debit card,true
+697,697,"Soup - Clam Chowder, Dry Mix",67,145.78,2969.58,5/10/2021,Apt 1487,credit card,true
+698,698,Soup Campbells Mexicali Tortilla,34,698.81,199.9,10/6/2021,Apt 777,credit card,true
+699,699,Veal - Insides Provini,86,869.61,6747.12,1/20/2021,Apt 1519,credit card,false
+700,700,Beans - Green,14,756.86,704.88,1/31/2021,Apt 1546,debit card,true
+701,701,"Juice - Tomato, 48 Oz",34,263.22,4998.77,4/25/2021,Suite 37,debit card,true
+702,702,"Yogurt - Strawberry, 175 Gr",36,308.59,8023.09,6/17/2021,Apt 1191,credit card,true
+703,703,Sprouts - Pea,73,926.28,5109.14,2/22/2021,Suite 63,debit card,false
+704,704,Chicken Breast Halal,30,336.37,2689.08,7/1/2021,5th Floor,debit card,false
+705,705,Leeks - Large,30,779.33,175.1,3/12/2021,Room 392,debit card,true
+706,706,Flower - Daisies,91,599.87,5038.21,6/2/2021,13th Floor,debit card,false
+707,707,Leeks - Large,18,303.76,4615.71,4/27/2021,Apt 1005,debit card,true
+708,708,"Pasta - Cappellini, Dry",22,887.02,5774.71,12/15/2021,PO Box 99442,credit card,true
+709,709,Muffin Orange Individual,34,550.93,8001.08,4/25/2021,Apt 916,debit card,false
+710,710,"Red Snapper - Fresh, Whole",23,235.58,8245.68,5/19/2021,Suite 11,cash,true
+711,711,Cheese - Grana Padano,39,769.03,5699.19,4/3/2021,Room 751,credit card,false
+712,712,"Wine - Magnotta, White",94,264.76,9138.17,5/16/2021,PO Box 92175,cash,false
+713,713,"Tart Shells - Sweet, 4",96,527.36,386.79,10/5/2021,Suite 30,cash,false
+714,714,Coffee - French Vanilla Frothy,67,289.24,2031.09,12/28/2021,Apt 276,credit card,false
+715,715,Scallops - U - 10,58,946.13,6920.04,5/2/2021,Suite 5,cash,false
+716,716,Pastry - Key Limepoppy Seed Tea,9,230.64,465.09,12/8/2021,Room 890,debit card,true
+717,717,Table Cloth 62x120 White,59,715.0,252.83,1/18/2021,PO Box 78639,credit card,false
+718,718,Swiss Chard - Red,54,863.68,8302.83,1/30/2021,Apt 1237,cash,true
+719,719,Sugar - Individual Portions,30,660.39,4947.67,6/9/2021,Apt 1805,debit card,false
+720,720,Salt And Pepper Mix - White,43,841.53,2952.43,2/27/2021,16th Floor,cash,false
+721,721,Beef - Bresaola,12,436.5,8765.22,10/3/2021,Suite 76,debit card,true
+722,722,Parsley - Dried,73,509.06,1927.99,12/23/2021,6th Floor,cash,true
+723,723,Lamb - Shanks,15,42.16,3518.5,9/6/2021,14th Floor,cash,false
+724,724,Sping Loaded Cup Dispenser,9,935.44,6710.59,3/24/2021,Room 1742,debit card,true
+725,725,"Beef - Rib Roast, Cap On",35,619.71,873.08,12/1/2021,9th Floor,credit card,false
+726,726,"Sole - Dover, Whole, Fresh",11,782.86,9671.99,11/19/2021,Suite 53,debit card,false
+727,727,"Asparagus - White, Fresh",67,903.66,3814.12,1/17/2021,8th Floor,credit card,false
+728,728,Ecolab - Medallion,23,186.75,8181.9,5/13/2021,Apt 165,debit card,false
+729,729,Cheese - Shred Cheddar / Mozza,42,722.15,4861.44,10/9/2021,Suite 80,debit card,true
+730,730,Scallops - Live In Shell,16,781.13,5821.48,9/29/2021,9th Floor,credit card,false
+731,731,Chicken - Whole,78,282.08,5736.11,3/5/2021,Apt 1651,debit card,true
+732,732,Juice - Lemon,69,953.61,3211.53,9/14/2021,Suite 45,credit card,true
+733,733,Squeeze Bottle,51,894.94,5088.48,12/6/2021,Suite 12,debit card,true
+734,734,Longos - Lasagna Beef,6,266.85,8074.86,10/2/2021,Apt 1849,cash,true
+735,735,Red Pepper Paste,6,659.1,292.42,2/9/2021,Suite 51,debit card,false
+736,736,Beer - Sleeman Fine Porter,100,108.85,5553.18,4/28/2021,2nd Floor,cash,true
+737,737,Lettuce - Boston Bib,55,943.8,3084.26,10/5/2021,Suite 27,credit card,false
+738,738,Cocoa Butter,79,649.82,6462.55,8/9/2021,PO Box 71385,cash,true
+739,739,"Rum - Coconut, Malibu",80,377.51,3738.19,7/27/2021,PO Box 14685,debit card,true
+740,740,Tequila - Sauza Silver,93,479.73,4.67,11/1/2021,Suite 57,debit card,false
+741,741,Mustard Prepared,33,30.31,7788.57,1/5/2021,Apt 1937,credit card,false
+742,742,"Water - Spring Water, 355 Ml",12,152.34,2369.39,1/23/2021,PO Box 45543,cash,true
+743,743,Soup Bowl Clear 8oz92008,71,875.57,5661.84,7/23/2021,7th Floor,credit card,false
+744,744,"Cheese - Brie, Triple Creme",66,397.59,1231.86,3/3/2021,Suite 79,credit card,true
+745,745,Yoghurt Tubes,40,613.5,9697.71,3/20/2021,PO Box 74831,credit card,true
+746,746,Table Cloth 53x53 White,85,447.34,7417.87,1/14/2021,Suite 100,debit card,true
+747,747,Appetizer - Cheese Bites,64,75.13,9518.75,2/20/2021,PO Box 14419,debit card,true
+748,748,Capon - Whole,43,327.77,8458.68,12/26/2021,PO Box 36492,credit card,false
+749,749,"Nut - Almond, Blanched, Sliced",28,482.61,2204.21,5/28/2021,Room 1108,cash,true
+750,750,Tomatoes - Roma,44,599.79,5098.2,4/27/2021,PO Box 17919,cash,false
+751,751,"Bread - Rolls, Rye",99,177.63,5699.38,3/8/2021,Apt 1654,credit card,true
+752,752,"Pasta - Lasagne, Fresh",83,621.93,6697.44,3/22/2021,PO Box 84016,debit card,true
+753,753,Ecolab Silver Fusion,22,388.8,5636.89,4/19/2021,Suite 83,credit card,false
+754,754,Wine - Vidal Icewine Magnotta,72,172.56,7098.76,6/25/2021,Room 1868,debit card,false
+755,755,Pork - European Side Bacon,16,787.46,8480.49,3/9/2021,5th Floor,cash,true
+756,756,Gatorade - Lemon Lime,94,447.32,4802.95,4/29/2021,Room 1225,cash,false
+757,757,Nantuket Peach Orange,55,254.87,3551.52,1/12/2021,Suite 35,debit card,false
+758,758,Parsnip,39,634.02,3274.87,3/23/2021,19th Floor,debit card,true
+759,759,"Pepper - White, Ground",59,887.13,3338.33,4/19/2021,Apt 463,cash,true
+760,760,Kiwi Gold Zespri,62,319.98,3399.89,5/28/2021,Suite 77,credit card,false
+761,761,"Lemonade - Black Cherry, 591 Ml",14,801.95,4558.58,9/13/2021,Suite 17,cash,false
+762,762,Tomatoes - Yellow Hot House,4,77.04,2680.0,1/10/2021,Suite 83,cash,true
+763,763,Veal - Bones,30,267.33,1768.31,10/2/2021,Apt 1977,credit card,true
+764,764,Sword Pick Asst,92,466.98,6765.05,12/26/2021,10th Floor,credit card,true
+765,765,"Wine - White, Concha Y Toro",25,234.61,6339.32,9/10/2021,Room 1820,debit card,false
+766,766,Bread - White Epi Baguette,100,250.99,4700.15,11/23/2021,Suite 86,debit card,true
+767,767,"Lid - 10,12,16 Oz",46,691.02,3207.41,11/20/2021,Room 1763,debit card,true
+768,768,Puree - Mocha,99,488.75,7765.58,11/22/2021,Room 1568,credit card,true
+769,769,"Pork - Tenderloin, Fresh",14,2.25,9873.14,4/12/2021,PO Box 91414,cash,false
+770,770,Wine - Pinot Noir Mondavi Coastal,85,578.68,8311.94,10/27/2021,16th Floor,credit card,true
+771,771,"Beef - Roasted, Cooked",49,506.04,907.84,6/26/2021,Apt 1125,debit card,true
+772,772,Water Chestnut - Canned,62,934.91,1405.17,11/7/2021,17th Floor,cash,false
+773,773,"Soup - Knorr, Ministrone",21,118.78,1046.73,11/18/2021,9th Floor,credit card,false
+774,774,Appetizer - Tarragon Chicken,68,169.16,3284.61,12/19/2021,Room 1470,cash,false
+775,775,Samosa - Veg,99,848.08,4618.47,9/5/2021,Room 1996,credit card,false
+776,776,"Pepper - Chipotle, Canned",49,154.66,696.88,1/25/2021,11th Floor,debit card,true
+777,777,Nantucket Orange Juice,43,941.44,3642.04,9/16/2021,Apt 1655,credit card,true
+778,778,Pork - Back Ribs,42,488.68,7645.28,9/28/2021,Apt 458,credit card,true
+779,779,Sardines,46,994.91,3017.87,6/23/2021,Apt 1010,cash,false
+780,780,Garlic Powder,62,214.92,3998.34,2/13/2021,Room 1498,debit card,true
+781,781,Lettuce - Green Leaf,23,243.6,612.75,7/25/2021,Apt 1788,cash,true
+782,782,Greens Mustard,59,327.62,1733.76,8/10/2021,Suite 43,credit card,true
+783,783,Mix - Cocktail Strawberry Daiquiri,47,956.97,8669.43,4/25/2021,PO Box 20405,cash,true
+784,784,Pectin,25,195.17,7595.81,7/19/2021,Room 1409,credit card,false
+785,785,Yogurt - Plain,45,314.73,6573.02,12/17/2021,17th Floor,debit card,false
+786,786,Tomatoes - Yellow Hot House,88,95.43,7025.61,12/30/2021,Apt 987,cash,true
+787,787,Cheese - Ricotta,95,102.12,7190.51,3/13/2021,9th Floor,cash,true
+788,788,"Quail - Whole, Boneless",6,860.18,6509.75,11/29/2021,Suite 72,cash,false
+789,789,Sprouts - China Rose,54,601.06,9553.24,3/29/2021,Suite 18,cash,true
+790,790,Foil Cont Round,71,666.44,6576.89,2/19/2021,1st Floor,cash,false
+791,791,"Bread - Pullman, Sliced",71,7.75,6823.75,10/8/2021,PO Box 82610,credit card,true
+792,792,Bagelers - Cinn / Brown,7,350.96,9476.12,11/7/2021,12th Floor,debit card,false
+793,793,The Pop Shoppe - Grape,38,147.55,4268.89,9/6/2021,Suite 50,debit card,false
+794,794,"Chocolate - Pistoles, Lactee, Milk",15,88.14,5442.18,6/21/2021,Suite 95,debit card,true
+795,795,Beef - Bresaola,81,712.52,6498.62,7/19/2021,PO Box 2111,cash,false
+796,796,Cactus Pads,40,348.47,3763.37,6/23/2021,Suite 27,debit card,false
+797,797,Cream - 10%,22,25.08,5800.53,11/6/2021,14th Floor,debit card,false
+798,798,Tea - Green,98,900.62,5081.67,4/4/2021,PO Box 85660,cash,true
+799,799,"Doilies - 10, Paper",60,570.52,1148.91,3/10/2021,17th Floor,debit card,false
+800,800,Cookie Trail Mix,89,482.45,2320.07,7/18/2021,PO Box 87130,debit card,false
+801,801,Cheese - Parmigiano Reggiano,59,899.92,1425.83,10/10/2021,Room 1417,debit card,true
+802,802,Wine - Prosecco Valdobiaddene,1,408.13,5436.66,4/11/2021,14th Floor,credit card,true
+803,803,Soup - Campbells Beef Stew,52,225.55,6599.72,5/22/2021,Apt 361,debit card,true
+804,804,Almonds Ground Blanched,24,554.25,4251.29,5/26/2021,PO Box 76409,debit card,true
+805,805,Mace,3,222.41,5962.42,6/1/2021,5th Floor,credit card,false
+806,806,Carbonated Water - White Grape,65,885.55,5086.01,1/7/2021,Suite 95,credit card,false
+807,807,Coriander - Seed,73,882.31,8991.68,5/18/2021,Suite 69,debit card,true
+808,808,Wine - Zonnebloem Pinotage,68,119.49,7424.74,2/10/2021,PO Box 95331,credit card,true
+809,809,"Tart Shells - Sweet, 4",9,981.65,5577.74,11/9/2021,Suite 65,credit card,false
+810,810,Steam Pan Full Lid,52,320.86,5093.98,2/17/2021,PO Box 76762,credit card,true
+811,811,Marjoram - Fresh,36,829.13,9620.52,6/30/2021,Room 1925,cash,true
+812,812,"Water - Mineral, Natural",4,215.12,966.11,8/20/2021,PO Box 81992,cash,true
+813,813,Mustard - Seed,22,148.57,1068.8,5/21/2021,PO Box 1435,cash,true
+814,814,Extract Vanilla Pure,28,365.21,1707.92,8/20/2021,PO Box 6094,cash,true
+815,815,Tobasco Sauce,52,801.5,8770.74,6/1/2021,Apt 314,cash,true
+816,816,Pan Grease,2,779.25,119.68,1/30/2021,Room 170,cash,true
+817,817,"Cherries - Bing, Canned",83,614.11,6298.86,10/31/2021,3rd Floor,cash,true
+818,818,Bread - Italian Sesame Poly,2,150.36,7407.58,9/26/2021,Suite 19,debit card,false
+819,819,Vegetable - Base,79,956.08,5515.62,5/30/2021,Apt 1630,credit card,true
+820,820,"Oil - Olive, Extra Virgin",68,691.64,2028.74,4/10/2021,Suite 26,credit card,true
+821,821,Aromat Spice / Seasoning,46,341.55,8710.97,5/22/2021,PO Box 29375,cash,false
+822,822,Appetizer - Mushroom Tart,32,155.15,7190.59,4/20/2021,Room 1793,debit card,true
+823,823,Potato - Sweet,63,89.15,1535.32,10/12/2021,Suite 85,credit card,true
+824,824,Sauce - Ranch Dressing,63,159.95,2611.84,2/4/2021,4th Floor,cash,false
+825,825,Appetizer - Tarragon Chicken,74,866.46,9269.81,4/4/2021,Room 1248,credit card,false
+826,826,Amaretto,83,125.33,2060.68,10/25/2021,Room 1437,debit card,true
+827,827,Paper Cocktail Umberlla 80 - 180,92,380.88,467.67,1/30/2021,17th Floor,cash,true
+828,828,Island Oasis - Magarita Mix,25,597.42,7191.69,5/22/2021,PO Box 92131,credit card,true
+829,829,"Zucchini - Mini, Green",16,169.9,6065.72,10/7/2021,Suite 46,cash,true
+830,830,Cauliflower,61,421.27,9954.03,7/12/2021,4th Floor,cash,false
+831,831,Table Cloth 144x90 White,83,544.46,5479.87,1/19/2021,12th Floor,cash,true
+832,832,Wine - Jafflin Bourgongone,38,515.84,2754.49,2/17/2021,Room 786,debit card,false
+833,833,Muffin - Bran Ind Wrpd,88,688.71,9284.44,12/3/2021,PO Box 43912,debit card,false
+834,834,Garlic - Elephant,91,542.61,3677.52,5/24/2021,Suite 98,credit card,true
+835,835,Coffee - Hazelnut Cream,95,161.73,7657.62,11/10/2021,17th Floor,cash,false
+836,836,Bread - Frozen Basket Variety,30,179.63,7858.69,4/19/2021,Suite 37,cash,false
+837,837,"Soup - Cream Of Broccoli, Dry",18,246.52,2785.04,3/16/2021,19th Floor,cash,true
+838,838,Pork - Backs - Boneless,42,511.66,9415.09,12/12/2021,Apt 1536,debit card,false
+839,839,"Stock - Veal, White",52,270.45,8412.76,12/14/2021,Room 615,debit card,true
+840,840,"Wine - Magnotta, Merlot Sr Vqa",67,58.56,7667.28,2/19/2021,Suite 24,cash,false
+841,841,"Beef - Ox Tail, Frozen",45,419.88,258.79,11/1/2021,PO Box 6241,cash,true
+842,842,Wine - Hardys Bankside Shiraz,78,240.8,1529.04,11/3/2021,Apt 962,cash,true
+843,843,Muffin Carrot - Individual,98,327.74,2945.77,1/8/2021,Suite 4,credit card,false
+844,844,Smoked Paprika,35,286.85,9240.96,5/23/2021,3rd Floor,credit card,true
+845,845,Water - Tonic,51,941.74,5835.83,5/30/2021,Room 750,debit card,false
+846,846,Pasta - Angel Hair,46,284.32,1766.46,2/11/2021,13th Floor,cash,false
+847,847,Icecream - Dstk Strw Chseck,89,983.32,3333.97,7/4/2021,Suite 43,credit card,false
+848,848,Muffin - Mix - Bran And Maple 15l,80,974.08,7238.16,11/29/2021,Suite 72,credit card,false
+849,849,Bagel - 12 Grain Preslice,60,654.92,4649.86,5/3/2021,Suite 73,credit card,true
+850,850,Jicama,65,259.86,4661.57,1/5/2021,5th Floor,debit card,true
+851,851,"Wine - White, Colubia Cresh",75,723.78,5296.59,3/31/2021,Suite 59,credit card,true
+852,852,"Wine - White, Colubia Cresh",83,542.71,8650.23,10/5/2021,PO Box 35344,cash,false
+853,853,Fib N9 - Prague Powder,27,460.89,6362.59,8/4/2021,15th Floor,debit card,false
+854,854,Carbonated Water - Lemon Lime,55,3.78,2038.85,7/10/2021,PO Box 27667,debit card,false
+855,855,Muffin Batt - Carrot Spice,79,568.89,7838.83,11/8/2021,9th Floor,cash,true
+856,856,Oven Mitts - 15 Inch,38,952.78,2053.66,6/4/2021,Apt 1070,debit card,false
+857,857,Onions - Cippolini,59,187.29,4150.51,5/15/2021,3rd Floor,credit card,false
+858,858,Water - Evian 355 Ml,88,514.7,12.97,3/2/2021,PO Box 65185,debit card,false
+859,859,Sauce - Thousand Island,99,269.65,364.43,8/15/2021,PO Box 11553,debit card,false
+860,860,Coffee Swiss Choc Almond,9,507.09,233.55,6/5/2021,Suite 39,cash,false
+861,861,Ice Cream - Vanilla,11,964.54,3199.78,9/12/2021,Suite 22,debit card,true
+862,862,Mahi Mahi,85,900.46,4347.98,3/4/2021,Suite 71,cash,true
+863,863,Puff Pastry - Sheets,64,24.98,1958.64,6/27/2021,Suite 57,credit card,true
+864,864,Ham - Cooked Bayonne Tinned,52,34.56,2008.4,10/1/2021,Apt 987,debit card,true
+865,865,Cheese - Feta,7,912.23,5636.97,12/17/2021,Suite 97,credit card,false
+866,866,Bag Stand,26,423.76,4893.54,9/22/2021,Room 1495,credit card,true
+867,867,"Soup - Knorr, Ministrone",70,133.18,8084.12,7/19/2021,12th Floor,cash,true
+868,868,"Bread - Rolls, Rye",78,948.42,1792.02,1/27/2021,Suite 4,credit card,false
+869,869,Water - Tonic,100,717.83,2591.91,10/4/2021,PO Box 83935,credit card,true
+870,870,"Chestnuts - Whole,canned",91,155.4,7027.59,4/21/2021,Suite 57,cash,false
+871,871,"Nut - Peanut, Roasted",98,377.46,9179.7,10/7/2021,18th Floor,debit card,false
+872,872,Ostrich - Fan Fillet,69,964.52,3303.14,2/23/2021,PO Box 34297,debit card,false
+873,873,"Cheese - Manchego, Spanish",36,422.36,8130.15,11/23/2021,16th Floor,credit card,true
+874,874,Chevril,35,987.04,3658.5,5/13/2021,Suite 41,credit card,true
+875,875,Cheese - Brick With Onion,45,54.84,8296.69,12/12/2021,16th Floor,credit card,true
+876,876,Sauce - Caesar Dressing,28,840.13,3762.47,12/1/2021,Room 1582,credit card,false
+877,877,Beef Tenderloin Aaa,14,479.69,265.05,3/2/2021,Room 1141,credit card,false
+878,878,Corn Meal,64,148.29,2147.04,8/12/2021,15th Floor,debit card,false
+879,879,Muffin - Banana Nut Individual,87,289.14,6687.16,5/10/2021,Suite 38,credit card,true
+880,880,Towel Dispenser,85,202.49,1025.38,1/7/2021,Room 1964,cash,true
+881,881,Soup Campbells - Italian Wedding,86,351.52,9568.19,4/17/2021,13th Floor,debit card,false
+882,882,Taro Leaves,35,589.03,4575.03,3/27/2021,PO Box 56640,credit card,false
+883,883,Plate Pie Foil,18,781.05,3918.26,1/24/2021,Suite 16,cash,true
+884,884,Daves Island Stinger,72,380.98,3396.54,3/11/2021,Suite 59,debit card,true
+885,885,Soup Knorr Chili With Beans,79,428.66,9440.4,6/3/2021,Suite 81,debit card,false
+886,886,Cake - Dulce De Leche,77,588.39,9321.79,9/29/2021,Apt 1209,debit card,true
+887,887,Chocolate - Compound Coating,6,322.32,4726.56,5/19/2021,Room 872,credit card,true
+888,888,Mussels - Frozen,26,73.59,8419.91,7/9/2021,Room 801,credit card,true
+889,889,Steam Pan Full Lid,63,4.26,6550.72,2/21/2021,Room 597,debit card,false
+890,890,Scrubbie - Scotchbrite Hand Pad,100,565.57,8905.1,5/14/2021,Apt 1743,debit card,true
+891,891,Puree - Raspberry,30,24.44,2487.9,1/4/2021,Apt 552,credit card,true
+892,892,"Cod - Salted, Boneless",45,129.8,8674.86,11/2/2021,15th Floor,credit card,true
+893,893,Glaze - Apricot,41,326.16,4040.67,8/27/2021,12th Floor,credit card,true
+894,894,Pie Box - Cello Window 2.5,17,617.49,290.44,3/30/2021,Room 362,credit card,true
+895,895,Lamb - Whole Head Off,92,804.67,3926.78,6/3/2021,Suite 51,credit card,false
+896,896,Tuna - Fresh,7,27.7,2.38,1/14/2021,Suite 39,debit card,false
+897,897,"Soup - French Onion, Dry",23,811.74,2035.29,1/1/2021,Apt 1450,cash,true
+898,898,Sauce - Marinara,35,627.22,9143.39,4/22/2021,18th Floor,credit card,true
+899,899,Cookie Dough - Peanut Butter,17,662.16,3921.76,4/23/2021,Suite 97,cash,true
+900,900,Breakfast Quesadillas,97,730.53,2758.4,11/22/2021,Room 652,debit card,false
+901,901,"Vodka - Hot, Lnferno",19,614.61,588.29,10/2/2021,PO Box 53209,credit card,true
+902,902,Swiss Chard,42,66.81,6512.55,8/4/2021,Room 663,credit card,true
+903,903,Squash - Pepper,53,823.89,1743.44,2/20/2021,Apt 968,debit card,true
+904,904,"Cheese - Havarti, Salsa",78,969.58,4158.03,4/8/2021,Room 923,credit card,false
+905,905,Pastry - Key Limepoppy Seed Tea,11,37.76,5289.38,9/25/2021,Suite 32,cash,true
+906,906,Cheese - Pont Couvert,24,200.91,6875.81,1/19/2021,17th Floor,debit card,true
+907,907,Chocolate - Mi - Amere Semi,93,161.48,3992.75,1/10/2021,Apt 1383,debit card,true
+908,908,Chicken - Livers,78,190.45,4778.29,10/10/2021,PO Box 73784,cash,false
+909,909,Curry Paste - Madras,71,131.15,5314.2,9/23/2021,PO Box 67978,cash,true
+910,910,"Rum - Dark, Bacardi, Black",51,122.17,6454.29,10/21/2021,PO Box 86321,credit card,true
+911,911,Sweet Pea Sprouts,39,994.92,8338.74,4/14/2021,Room 705,cash,false
+912,912,Liners - Baking Cups,52,863.86,9116.18,7/5/2021,Suite 18,credit card,false
+913,913,"Lid - High Heat, Super Clear",26,922.54,8988.66,6/15/2021,Suite 56,debit card,false
+914,914,Danishes - Mini Raspberry,71,478.75,1498.75,10/23/2021,Apt 1594,credit card,false
+915,915,V8 - Berry Blend,1,604.0,7102.59,11/29/2021,Apt 592,credit card,true
+916,916,"Crab - Claws, 26 - 30",94,370.31,4145.62,7/26/2021,PO Box 46877,cash,false
+917,917,Cheese - Brie,8,795.75,9626.22,12/12/2021,15th Floor,cash,false
+918,918,Molasses - Fancy,45,758.5,8819.36,7/11/2021,Suite 35,credit card,true
+919,919,Mix Pina Colada,39,86.91,3442.76,10/1/2021,Apt 1434,debit card,false
+920,920,Bread Cranberry Foccacia,5,159.58,8713.34,11/26/2021,Room 1630,debit card,true
+921,921,Pepper - Scotch Bonnet,64,347.89,3379.06,7/17/2021,Suite 79,cash,false
+922,922,Wine - Taylors Reserve,63,889.12,3714.5,4/19/2021,Apt 1999,cash,true
+923,923,Fond - Neutral,90,459.85,6903.3,3/22/2021,Suite 43,debit card,false
+924,924,Island Oasis - Lemonade,76,436.62,6862.13,1/28/2021,Suite 99,cash,true
+925,925,"Pasta - Bauletti, Chicken White",77,74.53,7526.64,7/15/2021,PO Box 73867,cash,false
+926,926,Coffee Cup 8oz 5338cd,36,25.14,6432.15,4/29/2021,4th Floor,debit card,false
+927,927,Wine - Bouchard La Vignee Pinot,44,247.11,3712.27,2/7/2021,8th Floor,debit card,true
+928,928,"Wine - White, Colubia Cresh",72,836.25,1161.58,2/21/2021,PO Box 43918,cash,false
+929,929,"Cheese - Boursin, Garlic / Herbs",8,662.84,4965.17,9/29/2021,13th Floor,cash,true
+930,930,Ham - Black Forest,73,214.71,7393.94,8/18/2021,Apt 1816,cash,true
+931,931,Lemon Grass,30,520.76,8897.21,12/15/2021,Room 1433,debit card,true
+932,932,"Fish - Artic Char, Cold Smoked",61,217.86,9839.21,3/9/2021,PO Box 5644,debit card,true
+933,933,Waffle Stix,64,831.78,2488.84,12/6/2021,Room 1302,credit card,true
+934,934,"Bread - Pumpernickle, Rounds",24,587.78,112.03,12/24/2021,Suite 5,cash,false
+935,935,"Squash - Pattypan, Yellow",8,511.73,8875.04,4/20/2021,Room 1061,debit card,true
+936,936,Persimmons,41,663.24,4379.31,4/9/2021,PO Box 42664,debit card,true
+937,937,Wine - Magnotta - Pinot Gris Sr,47,845.56,7021.11,2/28/2021,Suite 20,debit card,false
+938,938,Wine - Fat Bastard Merlot,34,192.15,979.53,7/15/2021,PO Box 74929,credit card,true
+939,939,Soup - Campbells Asian Noodle,4,120.13,4773.37,11/3/2021,Suite 33,debit card,true
+940,940,"Pork - Ham, Virginia",28,744.86,1068.86,11/15/2021,Apt 47,cash,true
+941,941,"Nut - Walnut, Pieces",47,300.79,2489.14,8/27/2021,6th Floor,debit card,false
+942,942,Wine - Jaboulet Cotes Du Rhone,79,186.8,3863.01,1/8/2021,Suite 58,credit card,false
+943,943,Juice - Apple 284ml,18,76.28,2217.56,1/24/2021,2nd Floor,credit card,true
+944,944,Red Cod Fillets - 225g,92,712.28,5975.78,6/26/2021,PO Box 96174,cash,true
+945,945,Sauce - Marinara,37,212.77,479.4,8/8/2021,Room 1892,credit card,true
+946,946,Carbonated Water - Blackberry,15,637.59,5121.39,8/28/2021,Apt 1439,debit card,false
+947,947,"Corn - Cream, Canned",66,669.79,1363.18,12/26/2021,Room 504,credit card,true
+948,948,Bonito Flakes - Toku Katsuo,46,134.27,5330.29,7/28/2021,Apt 1867,cash,false
+949,949,Cookie Dough - Chunky,53,12.47,4513.19,3/7/2021,Apt 1818,cash,true
+950,950,Oil - Hazelnut,59,883.66,1686.53,5/17/2021,Suite 67,debit card,false
+951,951,Cornstarch,35,84.63,8981.33,2/1/2021,PO Box 17956,debit card,true
+952,952,Capon - Whole,75,589.46,7260.63,4/8/2021,Suite 33,cash,false
+953,953,Shrimp - 31/40,48,371.06,7806.23,11/25/2021,Suite 62,debit card,false
+954,954,"Gin - Gilbeys London, Dry",74,1.4,5823.52,6/30/2021,16th Floor,cash,false
+955,955,Grenadine,7,481.58,3063.24,5/20/2021,PO Box 74964,credit card,false
+956,956,"Juice - Cranberry, 341 Ml",54,628.49,7174.96,7/30/2021,PO Box 29673,cash,true
+957,957,Wine - Crozes Hermitage E.,64,999.56,9914.14,5/19/2021,PO Box 51850,cash,true
+958,958,Pancetta,75,187.85,9599.57,3/4/2021,Suite 17,debit card,true
+959,959,Caviar - Salmon,31,27.71,6565.1,10/27/2021,PO Box 25758,credit card,true
+960,960,Kellogs Cereal In A Cup,51,723.76,100.17,3/8/2021,Apt 1068,cash,true
+961,961,"Roe - Lump Fish, Red",37,570.12,383.6,11/21/2021,Suite 43,credit card,false
+962,962,"Veal - Inside, Choice",40,852.63,1707.41,2/25/2021,PO Box 88391,debit card,true
+963,963,"Juice - Apple, 1.36l",87,361.22,3645.22,11/15/2021,Room 355,debit card,true
+964,964,"Nut - Pistachio, Shelled",7,271.36,990.63,12/22/2021,Apt 1612,cash,false
+965,965,Soup - Campbells Chili,64,788.79,5268.24,9/30/2021,Room 1010,cash,false
+966,966,Duck - Whole,50,876.26,1396.71,7/3/2021,Room 1709,credit card,false
+967,967,Pheasants - Whole,10,502.1,5517.31,5/21/2021,12th Floor,credit card,false
+968,968,Foil - 4oz Custard Cup,41,347.83,5902.85,9/22/2021,Room 1718,credit card,false
+969,969,Beer - Maudite,96,581.83,3826.9,9/28/2021,9th Floor,debit card,false
+970,970,Seabream Whole Farmed,86,475.51,5840.54,8/20/2021,Suite 55,debit card,false
+971,971,Crackers - Melba Toast,9,11.68,8251.04,3/10/2021,Apt 86,debit card,false
+972,972,"Wine - White, Antinore Orvieto",54,530.77,1596.88,8/7/2021,PO Box 39668,cash,true
+973,973,"Juice - Apple, 500 Ml",57,856.79,6353.97,3/5/2021,Suite 95,credit card,false
+974,974,"Beef - Cooked, Corned",87,901.52,7110.07,6/14/2021,Suite 40,debit card,false
+975,975,Soup - Campbells Beef Strogonoff,42,345.21,5812.86,5/4/2021,Apt 1947,debit card,true
+976,976,Bay Leaf Fresh,5,997.92,4272.51,7/10/2021,PO Box 14153,cash,false
+977,977,"Sauce - Soya, Light",57,123.3,6029.95,2/28/2021,PO Box 14279,credit card,true
+978,978,Almonds Ground Blanched,70,217.51,8559.56,1/10/2021,PO Box 21605,cash,false
+979,979,Sloe Gin - Mcguinness,32,796.68,2003.08,8/25/2021,PO Box 68223,cash,true
+980,980,Energy Drink Red Bull,10,96.85,8616.61,12/11/2021,Room 1857,cash,false
+981,981,Nantuket Peach Orange,44,137.15,2399.4,1/31/2021,Room 1868,cash,false
+982,982,Ginger - Crystalized,10,68.21,7285.06,4/20/2021,PO Box 23352,credit card,false
+983,983,Pomello,86,923.57,3880.89,2/15/2021,PO Box 17531,cash,false
+984,984,Wine - Cabernet Sauvignon,69,947.62,5439.18,7/4/2021,Suite 59,cash,false
+985,985,Sprouts - Bean,45,347.25,5969.13,6/27/2021,Apt 395,debit card,false
+986,986,"Fish - Artic Char, Cold Smoked",5,518.22,6335.95,2/28/2021,PO Box 12523,debit card,false
+987,987,Pur Source,88,221.61,7113.37,3/22/2021,PO Box 86294,credit card,true
+988,988,Muffin Carrot - Individual,80,28.69,1868.3,6/9/2021,7th Floor,debit card,true
+989,989,Wood Chips - Regular,91,488.87,2021.44,5/22/2021,PO Box 95977,debit card,true
+990,990,Cut Wakame - Hanawakaba,97,545.8,8642.94,12/4/2021,Apt 1621,cash,true
+991,991,"Turkey - Breast, Double",27,594.3,6406.92,11/11/2021,Room 539,cash,true
+992,992,"Veal - Round, Eye Of",44,900.35,4659.92,2/7/2021,11th Floor,debit card,true
+993,993,Sprouts Dikon,74,558.46,1524.64,6/28/2021,Room 730,cash,false
+994,994,Pepper - Chili Powder,82,343.98,5979.73,8/15/2021,Apt 1164,cash,false
+995,995,Cabbage - Green,4,687.36,8429.72,6/22/2021,Suite 10,credit card,false
+996,996,Petite Baguette,7,332.13,5421.97,8/1/2021,9th Floor,debit card,true
+997,997,"Salt - Rock, Course",52,352.41,123.75,4/26/2021,4th Floor,cash,false
+998,998,Horseradish - Prepared,61,404.1,5785.16,10/1/2021,Apt 1424,credit card,false
+999,999,Cheese Cloth No 60,24,914.06,5633.52,1/16/2021,PO Box 22941,debit card,false
+1000,1000,Banana,83,545.93,9704.32,8/12/2021,Room 1797,credit card,true
