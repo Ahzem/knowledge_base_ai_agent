@@ -1,0 +1,25 @@
+# write the gitignore for a python virtual env project
+
+.env
+__pycache__
+Lib/
+Scripts/
+bin/
+include/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+
+.lock
+*.log
+*.tmp
+*.tmp.*
+*.swp
+*~
+*.bak
+*.cache
+*.egg-info
+*.eggs
+*.egg
