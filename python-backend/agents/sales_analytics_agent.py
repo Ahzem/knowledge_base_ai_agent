@@ -2,7 +2,6 @@ from phi.agent import Agent
 from phi.model.openai import OpenAIChat
 from phi.knowledge.csv import CSVUrlKnowledgeBase
 from phi.vectordb.pgvector import PgVector
-from phi.tools.googlesearch import GoogleSearch
 from agents.web_search_agent import WebSearchAgent
 from agents.recommendation_agent import RecommendationAgent
 from agents.visualization_agent import VisualizationAgent
@@ -163,104 +162,6 @@ class SalesFinanceAgent:
         Always use data-driven insights to support recommendations. Acknowledge data limitations when present. Prioritize insights by business impact rather than just statistical significance.
         """
 
-    # def parse_date_query(self, query):
-    #     """Extract date information from query for better context"""
-    #     year_only_pattern = r'\b(20\d{2})\b'  # Matches years like 2023, 2024, etc.
-    #     year_match = re.search(year_only_pattern, query)
-    #     if year_match:
-    #         year = int(year_match.group(1))
-    #         return {
-    #             'year': year,
-    #             'month': None,
-    #             'target_period': f"year {year}",
-    #             'previous_period': f"year {year-1}"  # Include previous year for comparison
-    #         }
-        
-    #     # Match patterns like MM/YYYY, MM-YYYY, MM.YYYY, or "Month YYYY"
-    #     date_patterns = [
-    #         r'(\d{1,2})\s*/\s*(\d{4})',
-    #         r'(\d{1,2})\s*-\s*(\d{4})',
-    #         r'(\d{1,2})\s*\.\s*(\d{4})',
-    #         r'(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+(\d{4})'
-    #     ]
-        
-    #     for pattern in date_patterns:
-    #         match = re.search(pattern, query, re.IGNORECASE)
-    #         if match:
-    #             if match.group(1).isdigit():
-    #                 # This is a numeric month pattern (MM/YYYY)
-    #                 month = int(match.group(1))
-    #                 year = int(match.group(2))
-    #             else:
-    #                 # This is a text month pattern (Month YYYY)
-    #                 month_name = match.group(1).lower()
-    #                 year = int(match.group(2))
-                    
-    #                 # Map month name to number
-    #                 month_map = {
-    #                     'jan': 1, 'january': 1,
-    #                     'feb': 2, 'february': 2,
-    #                     'mar': 3, 'march': 3,
-    #                     'apr': 4, 'april': 4,
-    #                     'may': 5,
-    #                     'jun': 6, 'june': 6,
-    #                     'jul': 7, 'july': 7,
-    #                     'aug': 8, 'august': 8,
-    #                     'sep': 9, 'september': 9,
-    #                     'oct': 10, 'october': 10,
-    #                     'nov': 11, 'november': 11,
-    #                     'dec': 12, 'december': 12
-    #                 }
-                    
-    #                 month = month_map.get(month_name.lower(), None)
-                
-    #             # Calculate previous period for comparison
-    #             if month == 1:
-    #                 previous_month = 12
-    #                 previous_year = year - 1
-    #             else:
-    #                 previous_month = month - 1
-    #                 previous_year = year
-                    
-    #             return {
-    #                 'year': year,
-    #                 'month': month,
-    #                 'target_period': f"{month}/{year}",
-    #                 'previous_period': f"{previous_month}/{previous_year}"
-    #             }
-        
-    #     # Add an additional check for common phrases like "January 2025"
-    #     month_year_pattern = r'(january|february|march|april|may|june|july|august|september|october|november|december)\s+(\d{4})'
-    #     match = re.search(month_year_pattern, query.lower())
-    #     if match:
-    #         month_name = match.group(1).lower()
-    #         year = int(match.group(2))
-            
-    #         # Map full month names to numbers
-    #         month_map = {
-    #             'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6,
-    #             'july': 7, 'august': 8, 'september': 9, 'october': 10, 'november': 11, 'december': 12
-    #         }
-            
-    #         month = month_map.get(month_name, None)
-            
-    #         # Calculate previous period for comparison
-    #         if month == 1:
-    #             previous_month = 12
-    #             previous_year = year - 1
-    #         else:
-    #             previous_month = month - 1
-    #             previous_year = year
-                
-    #         return {
-    #             'year': year,
-    #             'month': month,
-    #             'target_period': f"{month}/{year}",
-    #             'previous_period': f"{previous_month}/{previous_year}"
-    #         }
-        
-    #     return None
-
     def get_data_for_period(self, month, year):
         """Extract data for specific month and year from the dataset"""
         if self.sales_data is None:
@@ -317,7 +218,6 @@ class SalesFinanceAgent:
             # Use the appropriate unique identifier for products
             product_key = 'Product ID' if 'Product ID' in dataset.columns else 'Product Name'
             
-            # First, aggregate by either Product ID or Product Name
             # This ensures we're combining all instances of the same product
             product_metrics = dataset.groupby(product_key).agg({
                 'Product Name': 'first',  # Keep the name for display
@@ -652,53 +552,70 @@ class SalesFinanceAgent:
         return "general sales analysis"
     
     def _extract_time_periods(self, query):
-        """Extract time period information from query using regex patterns"""
+        """Extract time period information from query using improved regex patterns"""
         query_lower = query.lower()
         
-        # Add an additional check for common phrases like "January 2025", "in January 2025", "for january 2025", etc.
-        month_year_patterns = [
-            r'(?:on|in|for|during)?\s*(\w+)\s+(\d{4})',  # January 2025, in January 2025
-            r'(\d{4})(?:\s*[-/]?\s*)(\w+)'  # 2025 January, 2025/January
-        ]
+        # Check for full month name + year format with optional prepositions
+        month_year_pattern = r'(?:on|in|for|during)?\s*(january|february|march|april|may|june|july|august|september|october|november|december)\s+(\d{4})'
+        match = re.search(month_year_pattern, query_lower)
+        if match:
+            month_name = match.group(1)
+            year = int(match.group(2))
+            
+            # Map month names to numbers
+            month_map = {
+                'january': 1, 'february': 2, 'march': 3, 'april': 4, 
+                'may': 5, 'june': 6, 'july': 7, 'august': 8, 
+                'september': 9, 'october': 10, 'november': 11, 'december': 12
+            }
+            
+            month = month_map.get(month_name)
+            return {
+                "month": month,
+                "year": year
+            }
         
-        # Check for month name + year patterns
-        for pattern in month_year_patterns:
-            matches = re.findall(pattern, query_lower)
-            for match in matches:
-                word1, word2 = match
-                
-                # Determine which is the month and which is the year
-                if word1.isdigit() and len(word1) == 4:
-                    year_str, month_str = word1, word2
-                elif word2.isdigit() and len(word2) == 4:
-                    month_str, year_str = word1, word2
-                else:
-                    continue
-                    
-                # Map month names to numbers
-                month_map = {
-                    'january': 1, 'jan': 1,
-                    'february': 2, 'feb': 2,
-                    'march': 3, 'mar': 3,
-                    'april': 4, 'apr': 4,
-                    'may': 5,
-                    'june': 6, 'jun': 6,
-                    'july': 7, 'jul': 7,
-                    'august': 8, 'aug': 8,
-                    'september': 9, 'sep': 9, 'sept': 9,
-                    'october': 10, 'oct': 10,
-                    'november': 11, 'nov': 11,
-                    'december': 12, 'dec': 12
-                }
-                
-                if month_str.lower() in month_map:
-                    month = month_map[month_str.lower()]
-                    year = int(year_str)
-                    
-                    return {
-                        "month": month,
-                        "year": year
-                    }
+        # Check for abbreviated month name + year
+        abbr_month_pattern = r'(?:on|in|for|during)?\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s+(\d{4})'
+        match = re.search(abbr_month_pattern, query_lower)
+        if match:
+            month_abbr = match.group(1)
+            year = int(match.group(2))
+            
+            # Map abbreviated month names to numbers
+            month_map = {
+                'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 
+                'jun': 6, 'jul': 7, 'aug': 8, 'sep': 9, 'sept': 9, 
+                'oct': 10, 'nov': 11, 'dec': 12
+            }
+            
+            month = month_map.get(month_abbr)
+            return {
+                "month": month,
+                "year": year
+            }
+        
+        # Check for year + month format (like "2025 January" or "2025/January")
+        year_month_pattern = r'(\d{4})(?:[-/\s]+)(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sep|sept|oct|nov|dec)'
+        match = re.search(year_month_pattern, query_lower)
+        if match:
+            year = int(match.group(1))
+            month_str = match.group(2)
+            
+            # Complete month map including both full and abbreviated names
+            month_map = {
+                'january': 1, 'jan': 1, 'february': 2, 'feb': 2, 
+                'march': 3, 'mar': 3, 'april': 4, 'apr': 4, 'may': 5,
+                'june': 6, 'jun': 6, 'july': 7, 'jul': 7, 'august': 8, 'aug': 8,
+                'september': 9, 'sep': 9, 'sept': 9, 'october': 10, 'oct': 10, 
+                'november': 11, 'nov': 11, 'december': 12, 'dec': 12
+            }
+            
+            month = month_map.get(month_str)
+            return {
+                "month": month,
+                "year": year
+            }
         
         # Match patterns like MM/YYYY, MM-YYYY, MM.YYYY
         date_patterns = [
@@ -763,499 +680,6 @@ class SalesFinanceAgent:
         
         # Return the metrics in priority order
         return [m["name"] for m in metrics_with_priority]
-
-    # def analyze_sales(self, query, data=None):
-    #     """Process sales analysis queries"""
-    #     try:
-    #         # First, extract any date information from the query
-    #         date_info = self.parse_date_query(query)
-    #         month = date_info['month'] if date_info else None
-    #         year = date_info['year'] if date_info else None
-            
-    #         # Parse the query for different types of analysis
-    #         query_lower = query.lower()
-
-    #         # Product analysis
-    #         if 'product' in query_lower or 'sell' in query_lower or 'profitable' in query_lower or 'top' in query_lower:
-    #             # Parse date info
-    #             date_info = self.parse_date_query(query)
-    #             month = date_info['month'] if date_info else None
-    #             year = date_info['year'] if date_info else None
-                
-    #             print(f"Analyzing product data for period: {month}/{year if year else ''}")
-                
-    #             product_data = self.analyze_product_data(month, year)
-    #             if isinstance(product_data, dict):
-    #                 # Format product analysis data for the agent
-    #                 top_by_volume = product_data['top_by_volume'][:5]  # Limit to top 5 for clarity
-    #                 top_by_revenue = product_data['top_by_revenue'][:5]
-    #                 top_by_margin = product_data['top_by_margin'][:5]
-    #                 time_period = product_data['time_period']
-                    
-    #                 # Format for easier consumption
-    #                 product_context = f"""
-    #                 # Product Analysis {time_period}
-            
-    #                 ## Top Products by Sales Volume
-    #                 """
-    #                 for i, product in enumerate(top_by_volume, 1):
-    #                     product_context += f"{i}. {product.get('Product Name', 'Unknown')} - {product.get('Quantity Sold', 0)} units\n"
-                    
-    #                 product_context += """
-    #                 ## Top Products by Revenue
-    #                 """
-    #                 for i, product in enumerate(top_by_revenue, 1):
-    #                     product_context += f"{i}. {product.get('Product Name', 'Unknown')} - ${product.get('Total Invoice Amount', 0):.2f}\n"
-                    
-    #                 product_context += """
-    #                 ## Top Products by Profit Margin
-    #                 """
-    #                 for i, product in enumerate(top_by_margin, 1):
-    #                     product_context += f"{i}. {product.get('Product Name', 'Unknown')} - {product.get('Profit Margin (%)', 0):.2f}%\n"
-                    
-    #                 # Send the formatted product analysis to the agent
-    #                 enhanced_query = f"""
-    #                 Analysis Request: {query}
-                    
-    #                 {product_context}
-                    
-    #                 Time Period: {time_period}
-                    
-    #                 Analyze this product data to identify:
-    #                 1. Which products are most profitable and why
-    #                 2. Any product categories that perform particularly well
-    #                 3. Recommendations for product mix optimization
-    #                 4. Any potential concerns or opportunities with specific products
-                    
-    #                 Format your response with clear sections, specific insights, and actionable recommendations.
-    #                 """
-                    
-    #                 response = self.agent.run(enhanced_query)
-    #                 return response.content if response else "Unable to generate product analysis."
-    #             else:
-    #                 # Return the error message if analyze_product_data didn't return a dict
-    #                 return product_data
-            
-    #         elif 'customer' in query_lower or 'retention' in query_lower or 'clv' in query_lower:
-    #             if 'clv' in query_lower or 'lifetime' in query_lower:
-    #                 clv_data = self.calculate_clv()
-    #                 if not isinstance(clv_data, str):
-    #                     # Format CLV data for the agent
-    #                     clv_context = f"""
-    #                     # Customer Lifetime Value Analysis
-                        
-    #                     ## Key CLV Metrics
-    #                     - Average Order Value: ${clv_data['avg_order_value']:.2f}
-    #                     - Purchase Frequency: {clv_data['purchase_frequency']:.2f} purchases per customer
-    #                     - Customer Retention Rate: {clv_data['retention_rate']:.2f}%
-    #                     - Average Customer Lifespan: {clv_data['avg_lifespan']:.2f} years
-    #                     - Average Customer Lifetime Value: ${clv_data['avg_clv']:.2f}
-                        
-    #                     ## Top Customers by Estimated CLV
-    #                     """
-                        
-    #                     for i, customer in enumerate(clv_data['top_by_clv'][:5], 1):
-    #                         clv_context += f"""
-    #                         {i}. Customer ID: {customer['Customer ID']}
-    #                            - Estimated CLV: ${customer['Estimated CLV']:.2f}
-    #                            - Average Order Value: ${customer['AOV']:.2f}
-    #                            - Number of Purchases: {customer['Invoice ID']}
-    #                            - Previous Purchases: {customer['Number of Previous Purchases']}
-    #                         """
-                        
-    #                     enhanced_query = f"""
-    #                     Analysis Request: {query}
-                        
-    #                     {clv_context}
-                        
-    #                     Analyze this CLV data to identify:
-    #                     1. The factors contributing to customer lifetime value
-    #                     2. Strategies to improve customer retention
-    #                     3. Recommendations for increasing customer value
-    #                     4. Opportunities to target high-value customers
-                        
-    #                     Format your response with clear sections, specific insights, and actionable recommendations.
-    #                     """
-                        
-    #                     response = self.agent.run(enhanced_query)
-    #                     return response.content if response else "Unable to generate CLV analysis."
-    #             else:
-    #                 customer_data = self.analyze_customer_data(month, year)
-    #                 if isinstance(customer_data, dict):
-    #                     # Format customer analysis data for the agent
-    #                     top_by_revenue = customer_data['top_by_revenue'][:5]  # Limit to top 5 for clarity
-    #                     top_by_transactions = customer_data['top_by_transactions'][:5]
-    #                     top_by_clv = customer_data['top_by_clv'][:5]
-    #                     time_period = customer_data['time_period']
-    #                     retention_rate = customer_data['overall_retention_rate']
-    #                     total_customers = customer_data['total_customers']
-    #                     returning_customers = customer_data['returning_customers']
-                        
-    #                     # Format for easier consumption
-    #                     customer_context = f"""
-    #                     # Customer Analysis {time_period}
-                        
-    #                     ## Customer Retention Metrics
-    #                     - Total Customers: {total_customers}
-    #                     - Returning Customers: {returning_customers}
-    #                     - Overall Retention Rate: {retention_rate:.2f}%
-                        
-    #                     ## Top Customers by Revenue
-    #                     """
-    #                     for i, customer in enumerate(top_by_revenue, 1):
-    #                         customer_context += f"""
-    #                         {i}. {customer['Customer Name']} ({customer['Customer ID']}):
-    #                            - Total Revenue: ${customer['Total Invoice Amount']:,.2f}
-    #                            - Number of Transactions: {customer['Invoice ID']}
-    #                            - Average Order Value: ${customer['Average Order Value']:,.2f}
-    #                            - Estimated CLV: ${customer['Estimated CLV']:,.2f}
-    #                         """
-                            
-    #                     customer_context += """
-    #                     ## Top Customers by Transactions
-    #                     """
-    #                     for i, customer in enumerate(top_by_transactions, 1):
-    #                         customer_context += f"""
-    #                         {i}. {customer['Customer Name']} ({customer['Customer ID']}):
-    #                            - Number of Transactions: {customer['Invoice ID']}
-    #                            - Total Revenue: ${customer['Total Invoice Amount']:,.2f}
-    #                            - Average Order Value: ${customer['Average Order Value']:,.2f}
-    #                            - Estimated CLV: ${customer['Estimated CLV']:,.2f}
-    #                         """
-                            
-    #                     customer_context += """
-    #                     ## Top Customers by Estimated CLV
-    #                     """
-    #                     for i, customer in enumerate(top_by_clv, 1):
-    #                         customer_context += f"""
-    #                         {i}. {customer['Customer Name']} ({customer['Customer ID']}):
-    #                            - Estimated CLV: ${customer['Estimated CLV']:,.2f}
-    #                            - Total Revenue: ${customer['Total Invoice Amount']:,.2f}
-    #                            - Number of Transactions: {customer['Invoice ID']}
-    #                            - Average Order Value: ${customer['Average Order Value']:,.2f}
-    #                         """
-                            
-    #                     # Send the formatted customer analysis to the agent
-
-    #                     enhanced_query = f"""
-    #                     Analysis Request: {query}
-                        
-    #                     {customer_context}
-                        
-    #                     Time Period: {time_period}
-                        
-    #                     Analyze this customer data to identify:
-    #                     1. The most valuable customers and their characteristics
-    #                     2. Trends in customer retention and loyalty
-    #                     3. Strategies to improve customer lifetime value
-    #                     4. Opportunities for personalized marketing
-                        
-    #                     Format your response with clear sections, specific insights, and actionable recommendations.
-    #                     """
-                        
-    #                     response = self.agent.run(enhanced_query)
-    #                     return response.content if response else "Unable to generate customer analysis."
-                    
-    #         elif 'inventory' in query_lower or 'stock' in query_lower or 'turnover' in query_lower:
-    #             inventory_data = self.analyze_inventory_data(month, year)
-    #             if isinstance(inventory_data, dict):
-    #                 # Format inventory analysis data for the agent
-    #                 slow_moving = inventory_data['slow_moving'][:5]
-    #                 fast_moving = inventory_data['fast_moving'][:5]
-    #                 avg_turnover = inventory_data['avg_turnover']
-    #                 avg_weeks_supply = inventory_data['avg_weeks_supply']
-    #                 time_period = inventory_data['time_period']
-                    
-    #                 # Format for easier consumption
-    #                 inventory_context = f"""
-    #                 # Inventory Analysis {time_period}
-                    
-    #                 ## Inventory Turnover Metrics
-    #                 - Average Stock Turnover Ratio: {avg_turnover:.2f} per year
-    #                 - Average Weeks of Supply: {avg_weeks_supply:.2f} weeks
-                    
-    #                 ## Slow-Moving Inventory
-    #                 """
-    #                 for i, product in enumerate(slow_moving, 1):
-    #                     inventory_context += f"""
-    #                     {i}. {product['Product Name']} ({product['Product Category']}):
-    #                        - Stock Turnover Ratio: {product['Stock Turnover Ratio']:.2f}
-    #                        - Stock Available: {product['Stock Quantity Available']}
-    #                        - COGS: ${product['Cost of Goods Sold (COGS)']:,.2f}
-    #                     """
-                        
-    #                 inventory_context += """
-    #                 ## Fast-Moving Inventory
-    #                 """
-    #                 for i, product in enumerate(fast_moving, 1):
-    #                     inventory_context += f"""
-    #                     {i}. {product['Product Name']} ({product['Product Category']}):
-    #                        - Stock Turnover Ratio: {product['Stock Turnover Ratio']:.2f}
-    #                        - Stock Available: {product['Stock Quantity Available']}
-    #                        - COGS: ${product['Cost of Goods Sold (COGS)']:,.2f}
-    #                     """
-                        
-    #                 # Send the formatted inventory analysis to the agent
-    #                 enhanced_query = f"""
-    #                 Analysis Request: {query}
-                    
-    #                 {inventory_context}
-                    
-    #                 Time Period: {time_period}
-                    
-    #                 Analyze this inventory data to identify:
-    #                 1. Slow-moving and fast-moving products
-    #                 2. Inventory turnover efficiency
-    #                 3. Recommendations for stock optimization
-    #                 4. Insights on inventory management strategies
-                    
-    #                 Format your response with clear sections, specific insights, and actionable recommendations.
-    #                 """
-                    
-    #                 response = self.agent.run(enhanced_query)
-    #                 return response.content if response else "Unable to generate inventory analysis."
-                
-    #         elif 'seasonal' in query_lower or 'trend' in query_lower or 'forecast' in query_lower:
-    #             seasonal_data = self.analyze_seasonal_trends()
-    #             if isinstance(seasonal_data, dict):
-    #                 # Format seasonal data for the agent
-    #                 quarterly_data = seasonal_data['quarterly_data'][:8]  # Show up to 8 quarters
-    #                 has_seasonality = seasonal_data['has_seasonality']
-    #                 seasonal_patterns = seasonal_data['seasonal_patterns']
-    #                 forecast = seasonal_data.get('forecast', {})
-                    
-    #                 # Format for easier consumption
-    #                 seasonal_context = """
-    #                 # Seasonal Sales Analysis and Forecast
-                    
-    #                 ## Quarterly Performance
-    #                 """
-                    
-    #                 for quarter in quarterly_data:
-    #                     quarter_label = quarter['QuarterLabel']
-    #                     revenue = quarter['Total Invoice Amount']
-    #                     sales_count = quarter['Invoice ID']
-    #                     revenue_growth = quarter.get('Revenue_Growth', 'N/A')
-    #                     if isinstance(revenue_growth, float):
-    #                         revenue_growth = f"{revenue_growth:.2f}%"
-                        
-    #                     seasonal_context += f"""
-    #                     ### {quarter_label}
-    #                     - Total Revenue: ${revenue:,.2f}
-    #                     - Number of Sales: {sales_count}
-    #                     - Revenue Growth: {revenue_growth}
-    #                     """
-                    
-    #                 # Add seasonality insights
-    #                 seasonal_context += """
-    #                 ## Seasonality Analysis
-    #                 """
-                    
-    #                 if has_seasonality:
-    #                     seasonal_context += "Significant seasonal patterns detected in the sales data:\n"
-    #                     for pattern in seasonal_patterns:
-    #                         quarter_num = pattern['quarter']
-    #                         quarter_name = f"Q{quarter_num}"
-    #                         seasonal_context += f"- {quarter_name}: ${pattern['revenue']:,.2f} average revenue, {pattern['sales']:.0f} average transactions\n"
-    #                 else:
-    #                     seasonal_context += "No significant seasonal patterns detected in the available data.\n"
-                    
-    #                 # Add forecast if available
-    #                 if forecast:
-    #                     seasonal_context += f"""
-    #                     ## Sales Forecast for {forecast['next_quarter']}
-    #                     - Projected Revenue: ${forecast['next_quarter_revenue']:,.2f}
-    #                     - Projected Number of Sales: {forecast['next_quarter_sales']:.0f}
-    #                     - Projected Units Sold: {forecast['next_quarter_quantity']:,.0f}
-                        
-    #                     This forecast is based on a moving average of the last 4 quarters.
-    #                     """
-                    
-    #                 # Send the formatted seasonal analysis to the agent
-    #                 enhanced_query = f"""
-    #                 Analysis Request: {query}
-                    
-    #                 {seasonal_context}
-                    
-    #                 Based on this seasonal sales data, please provide:
-    #                 1. An analysis of the sales trends and patterns observed
-    #                 2. Insights into the potential reasons for the observed seasonality
-    #                 3. Assessment of the reliability of the forecast
-    #                 4. Strategic recommendations for managing seasonal fluctuations
-    #                 5. Suggestions for inventory planning based on seasonal patterns
-                    
-    #                 Format your response with clear sections, specific insights, and actionable recommendations.
-    #                 """
-                    
-    #                 response = self.agent.run(enhanced_query)
-    #                 return response.content if response else "Unable to generate seasonal analysis."
-            
-    #         elif 'discount' in query_lower or 'markdown' in query_lower or 'promotion' in query_lower:
-    #             discount_data = self.analyze_discount_effectiveness(month, year)
-    #             if isinstance(discount_data, dict):
-    #                 # Format discount data for the agent
-    #                 discount_metrics = discount_data['discount_metrics']
-    #                 time_period = discount_data['time_period']
-    #                 total_discounts = discount_data['total_discounts']
-    #                 avg_discount = discount_data['avg_discount']
-    #                 total_markdown_loss = discount_data['total_markdown_loss']
-    #                 total_profit = discount_data['total_profit']
-                    
-    #                 # Format for easier consumption
-    #                 discount_context = f"""
-    #                 # Discount Strategy Analysis {time_period}
-                    
-    #                 ## Overall Discount Metrics
-    #                 - Total Discount Amount: ${total_discounts:,.2f}
-    #                 - Average Discount Applied: {avg_discount:.2f}%
-    #                 - Total Markdown Loss: ${total_markdown_loss:,.2f}
-    #                 - Total Gross Profit: ${total_profit:,.2f}
-    #                 - Overall Discount ROI: {(total_profit / total_markdown_loss * 100) if total_markdown_loss > 0 else 'N/A'}%
-                    
-    #                 ## Discount Performance by Range
-    #                 """
-                    
-    #                 for range_metrics in discount_metrics:
-    #                     discount_range = range_metrics['Discount Range']
-    #                     revenue = range_metrics['Total Invoice Amount']
-    #                     transactions = range_metrics['Invoice ID']
-    #                     avg_order_value = range_metrics['Average Order Value']
-    #                     profit_margin = range_metrics['Profit Margin %']
-    #                     sales_percentage = range_metrics['Sales Percentage']
-    #                     discount_roi = range_metrics['Discount ROI']
-                        
-    #                     discount_context += f"""
-    #                     ### {discount_range} Discount Range
-    #                     - Total Revenue: ${revenue:,.2f}
-    #                     - Number of Transactions: {transactions}
-    #                     - Average Order Value: ${avg_order_value:,.2f}
-    #                     - Profit Margin: {profit_margin:.2f}%
-    #                     - Percentage of Total Sales: {sales_percentage:.2f}%
-    #                     - Discount ROI: {discount_roi:.2f}%
-    #                     """
-                    
-    #                 # Send the formatted discount analysis to the agent
-    #                 enhanced_query = f"""
-    #                 Analysis Request: {query}
-                    
-    #                 {discount_context}
-                    
-    #                 Analyze this discount data to identify:
-    #                 1. Which discount ranges provide the best return on investment
-    #                 2. The impact of discounts on average order value and profit margins
-    #                 3. The effectiveness of current discount strategies
-    #                 4. Recommendations for optimizing discount approaches
-    #                 5. Potential risks or concerns in current discount practices
-                    
-    #                 Format your response with clear sections, specific insights, and actionable recommendations.
-    #                 """
-                    
-    #                 response = self.agent.run(enhanced_query)
-    #                 return response.content if response else "Unable to generate discount analysis."
-            
-    #         else:
-    #             date_info = self.parse_date_query(query)
-    #             date_context = ""
-    #             filtered_data = None
-                
-    #             if date_info:
-    #                 print(f"Found date in query: {date_info['target_period']}")
-    #                 # Try to get actual data for the periods
-    #                 target_data = self.get_data_for_period(date_info['month'], date_info['year'])
-    #                 previous_month = int(date_info['previous_period'].split('/')[0])
-    #                 previous_year = int(date_info['previous_period'].split('/')[1])
-    #                 previous_data = self.get_data_for_period(previous_month, previous_year)
-                    
-    #                 date_context = f"""
-    #                 Target analysis period: {date_info['target_period']}
-    #                 Previous period for comparison: {date_info['previous_period']}
-                    
-    #                 When searching for data, look for entries from month {date_info['month']} in year {date_info['year']}.
-    #                 Check 'Invoice Date' column entries in the format DD/MM/YYYY.
-    #                 """
-                    
-    #                 # If we have direct access to data, provide metrics immediately
-    #                 if target_data is not None:
-    #                     print(f"Found {len(target_data)} records for {date_info['target_period']}")
-    #                     target_metrics = {
-    #                         'total_revenue': target_data['Total Invoice Amount'].sum(),
-    #                         'num_sales': len(target_data),
-    #                         'avg_order_value': target_data['Total Invoice Amount'].sum() / len(target_data) if len(target_data) > 0 else 0,
-    #                         'total_cogs': target_data['Cost of Goods Sold (COGS)'].sum() if 'Cost of Goods Sold (COGS)' in target_data.columns else None,
-    #                         'month': date_info['month'],
-    #                         'year': date_info['year']
-    #                     }
-                        
-    #                     prev_metrics = None
-    #                     if previous_data is not None and len(previous_data) > 0:
-    #                         print(f"Found {len(previous_data)} records for {previous_month}/{previous_year}")
-    #                         prev_metrics = {
-    #                             'total_revenue': previous_data['Total Invoice Amount'].sum(),
-    #                             'num_sales': len(previous_data),
-    #                             'avg_order_value': previous_data['Total Invoice Amount'].sum() / len(previous_data) if len(previous_data) > 0 else 0,
-    #                             'total_cogs': previous_data['Cost of Goods Sold (COGS)'].sum() if 'Cost of Goods Sold (COGS)' in previous_data.columns else None,
-    #                             'month': previous_month,
-    #                             'year': previous_year
-    #                         }
-                        
-    #                     # Add data metrics to query context
-    #                     if prev_metrics:
-    #                         # Calculate growth rates if previous data exists
-    #                         revenue_growth = ((target_metrics['total_revenue'] - prev_metrics['total_revenue']) / prev_metrics['total_revenue'] * 100) if prev_metrics['total_revenue'] > 0 else 0
-    #                         sales_growth = ((target_metrics['num_sales'] - prev_metrics['num_sales']) / prev_metrics['num_sales'] * 100) if prev_metrics['num_sales'] > 0 else 0
-                            
-    #                         date_context += f"""
-    #                         Target Period Metrics:
-    #                         - Total Revenue: ${target_metrics['total_revenue']:.2f}
-    #                         - Number of Sales: {target_metrics['num_sales']}
-    #                         - Average Order Value: ${target_metrics['avg_order_value']:.2f}
-                            
-    #                         Previous Period Metrics:
-    #                         - Total Revenue: ${prev_metrics['total_revenue']:.2f}
-    #                         - Number of Sales: {prev_metrics['num_sales']}
-    #                         - Average Order Value: ${prev_metrics['avg_order_value']:.2f}
-                            
-    #                         Growth Rates:
-    #                         - Revenue Growth: {revenue_growth:.2f}%
-    #                         - Sales Count Growth: {sales_growth:.2f}%
-    #                         """
-    #                     else:
-    #                         date_context += f"""
-    #                         Target Period Metrics:
-    #                         - Total Revenue: ${target_metrics['total_revenue']:.2f}
-    #                         - Number of Sales: {target_metrics['num_sales']}
-    #                         - Average Order Value: ${target_metrics['avg_order_value']:.2f}
-                            
-    #                         No data available for previous period comparison.
-    #                         """
-    #                 else:
-    #                     date_context += "\nNo direct data found for the specified period. Using knowledge base search instead."
-            
-    #         enhanced_query = f"""
-    #         Analysis Request: {query}
-            
-    #         {date_context if 'date_context' in locals() else ''}
-            
-    #         If specific calculations are needed, use these formulas:
-    #         - AOV = Total Revenue / Number of Sales
-    #         - Growth Rate = (Current - Previous) / Previous * 100
-    #         - CLV = AOV × Purchase Frequency × Retention Rate
-    #         - Stock Turnover = COGS / Average Inventory
-            
-    #         Data Context: {data if data else 'Use historical data from knowledge base'}
-            
-    #         If asked about a specific time period, be sure to filter data from that period only.
-    #         For date fields, check the 'Invoice Date' column.
-            
-    #         Provide detailed analysis with specific metrics and recommendations.
-    #         """
-            
-    #         response = self.agent.run(enhanced_query)
-    #         return response.content if response else "Unable to generate analysis."
-
-    #     except Exception as e:
-    #         print(f"Analysis Error: {str(e)}")
-    #         return f"Error: Unable to complete analysis due to technical issues: {str(e)}"
 
     def analyze_discount_effectiveness(self, month=None, year=None):
         """Analyze the effectiveness of discounts with optional time filtering"""
@@ -1598,7 +1022,7 @@ class SalesFinanceAgent:
                     analysis_results["metrics"]["gross_profit"] = analysis_results["metrics"]["total_revenue"] - analysis_results["metrics"]["total_cost"]
                     analysis_results["metrics"]["profit_margin"] = (analysis_results["metrics"]["gross_profit"] / analysis_results["metrics"]["total_revenue"]) * 100
             
-            # Perform specific analysis based on intent
+            # # Perform specific analysis based on intent
             if "product" in intent or "sell" in intent or "top" in intent:
                 # Use existing product analysis as a helper function
                 product_data = self.analyze_product_data(month, year)
@@ -1665,7 +1089,6 @@ class SalesFinanceAgent:
                     analysis_results["discount_analysis"] = discount_data
                     
             elif "month" in intent and ("profit" in intent or "profitable" in intent):
-                # Handle "most profitable month" type queries
                 
                 # Group by month and calculate profitability metrics
                 if year is not None:
@@ -1762,7 +1185,7 @@ class SalesFinanceAgent:
                 
                 # Format simple response based on insight type
                 if insight_type == "top_product" or insight_type == "top_product_simple":
-                    return f"The top-selling product in {analysis_results['time_period']} is {primary_insight['product']} with {primary_insight['units_sold']:,} units sold."
+                    return f"The top-selling product in {analysis_results['time_period']} is {primary_insight['product']} with {primary_insight.get('value', primary_insight.get('units_sold', 0)):,} units sold."
                     
                 elif insight_type == "most_profitable_month":
                     return f"The most profitable month in {primary_insight['context'].split('from ')[1]} is {primary_insight['month']} with ${primary_insight['profit']:,.2f} in profit and a profit margin of {primary_insight['profit_margin']:.2f}%."
@@ -1778,7 +1201,7 @@ class SalesFinanceAgent:
                 
                 # Default simple response
                 return f"I've analyzed the data for {analysis_results['time_period']} but I'm not sure how to summarize it briefly. Try asking for more specific metrics or request a detailed analysis."
-            
+    
             # For detailed responses, use the LLM to generate a comprehensive analysis
             else:
                 # Create context from analysis results
@@ -1870,6 +1293,12 @@ class SalesFinanceAgent:
         match = re.search(year_pattern, error, re.IGNORECASE)
         if match:
             return f"year {match.group(1)}"
+        
+        # Look for month name + year
+        month_name_pattern = r'(january|february|march|april|may|june|july|august|september|october|november|december)\s+(\d{4})'
+        match = re.search(month_name_pattern, error, re.IGNORECASE)
+        if match:
+            return f"{match.group(1).title()} {match.group(2)}"
         
         return None
                 

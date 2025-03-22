@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from docx import Document
 from datetime import datetime
-from agents.sales_analyst import SalesAnalystAgent
+from agents.sales_analytics_agent import SalesFinanceAgent
 from utils.report_formatter import ReportFormatter
 from dotenv import load_dotenv
 import os
@@ -51,13 +51,12 @@ def get_ai_insights(df_filtered, month, year):
         }
 
         # Initialize and use the Sales Analyst Agent
-        analyst = SalesAnalystAgent()
+        analyst = SalesFinanceAgent()
         return analyst.get_insights(json.dumps(data_summary, indent=2), month, year)
 
     except Exception as e:
         print(f"Error generating AI insights: {str(e)}")
         return "Error: Unable to generate insights due to technical issues."
-
 
 def generate_monthly_report(year, month):
     # Create reports directory
@@ -72,12 +71,12 @@ def generate_monthly_report(year, month):
     report_path = os.path.join(reports_dir, report_filename)
     
     # Create sales trend graph
-    df = pd.read_csv("./data/FanBudget.csv")
-    df['Invoice Date'] = pd.to_datetime(df['Invoice Date'])  # Changed from purchase_date
+    df = pd.read_csv("https://data-analyst-ai-agent.s3.us-east-1.amazonaws.com/FanBudget.csv")
+    df['Invoice Date'] = pd.to_datetime(df['Invoice Date'])
     df_filtered = df[(df['Invoice Date'].dt.year == year) & (df['Invoice Date'].dt.month == month)]
     
     plt.figure(figsize=(10, 5))
-    daily_sales = df_filtered.groupby(df_filtered['Invoice Date'].dt.day)['Total Invoice Amount'].sum()  # Changed from total_price
+    daily_sales = df_filtered.groupby(df_filtered['Invoice Date'].dt.day)['Total Invoice Amount'].sum()
     sns.lineplot(x=daily_sales.index, y=daily_sales.values, marker='o')
     plt.xlabel("Day of the Month")
     plt.ylabel("Total Revenue ($)")
